@@ -1,0 +1,400 @@
+from __future__ import annotations
+
+import json
+import re
+import unicodedata
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data" if (BASE_DIR / "data").exists() else BASE_DIR
+SOURCE = DATA_DIR / "FootballMind_database.json"
+LEGENDS_SOURCE = DATA_DIR / "FootballMind_legends.json"
+CORRECTIONS_SOURCE = DATA_DIR / "FootballMind_career_corrections.json"
+TARGET = DATA_DIR / "FootballMind_game_database.json"
+
+# Alleen deze aanwijzingen mogen uiteindelijk in FootballMind-borden voorkomen.
+# De spelerhistorie zelf wordt samengevoegd; obscure bronwaarden worden niet als clue gebruikt.
+CLUBS = {
+    # Nederland
+    "Ajax","PSV","Feyenoord","AZ","FC Twente",
+    # Engeland
+    "Manchester United","Manchester City","Liverpool","Arsenal","Chelsea",
+    "Tottenham Hotspur","Newcastle United","Aston Villa","Everton","Leeds United",
+    # Spanje
+    "Barcelona","FC Barcelona","Real Madrid","Atlético Madrid","Atletico Madrid",
+    "Valencia","Sevilla",
+    # Duitsland
+    "Bayern München","Bayern Munich","Borussia Dortmund","Bayer Leverkusen",
+    "Schalke 04","Werder Bremen",
+    # Italië
+    "Juventus","AC Milan","Inter","Internazionale","AS Roma","Napoli","Lazio",
+    "Fiorentina","Sampdoria",
+    # Frankrijk
+    "Paris Saint-Germain","Paris Saint Germain","Olympique Marseille","AS Monaco",
+    # Portugal / Schotland / Turkije
+    "Benfica","FC Porto","Sporting CP","Celtic","Rangers","Galatasaray","Fenerbahçe","Fenerbahce"
+}
+
+COUNTRIES = {
+    "Nederland","Engeland","Frankrijk","Duitsland","Spanje","Italië","Italie",
+    "Portugal","Brazilië","Brazilie","Argentinië","Argentinie","België","Belgie",
+    "Kroatië","Kroatie","Uruguay","Denemarken","Zweden","Polen","Wales",
+    "Schotland","Ierland","Noord-Ierland","Servië","Servie","Tsjechië","Tsjechie"
+}
+
+COMPETITIONS = {
+    "Eredivisie","Premier League","La Liga","Bundesliga","Serie A","Ligue 1",
+    "Champions League","UEFA Champions League","Primeira Liga","Süper Lig","Super Lig",
+    "Scottish Premiership","EK","WK","Copa América","Copa America"
+}
+
+AWARDS = {
+    "Ballon d'Or","Wereldvoetballer van het Jaar","Europees Voetballer van het Jaar",
+    "Topscorer",
+    "Topscorer Eredivisie","Topscorer Premier League","Topscorer La Liga",
+    "Topscorer Serie A","Topscorer Bundesliga","Topscorer Ligue 1"
+}
+
+CANONICAL = {
+    "fc barcelona": "Barcelona",
+    "barca": "Barcelona",
+    "internazionale": "Inter",
+    "inter milan": "Inter",
+    "internazionale milano": "Inter",
+    "paris saint germain": "Paris Saint-Germain",
+    "paris sg": "Paris Saint-Germain",
+    "psg": "Paris Saint-Germain",
+    "bayern munich": "Bayern München",
+    "fc bayern munich": "Bayern München",
+    "fc bayern munchen": "Bayern München",
+    "atletico madrid": "Atlético Madrid",
+    "atletico de madrid": "Atlético Madrid",
+    "real madrid cf": "Real Madrid",
+    "man utd": "Manchester United",
+    "manchester utd": "Manchester United",
+    "man city": "Manchester City",
+    "liverpool fc": "Liverpool",
+    "arsenal fc": "Arsenal",
+    "chelsea fc": "Chelsea",
+    "tottenham": "Tottenham Hotspur",
+    "spurs": "Tottenham Hotspur",
+    "newcastle": "Newcastle United",
+    "psv eindhoven": "PSV",
+    "az alkmaar": "AZ",
+    "rangers fc": "Rangers",
+    "glasgow rangers": "Rangers",
+    "glasgow rangers fc": "Rangers",
+    "sporting lisbon": "Sporting CP",
+    "sporting lissabon": "Sporting CP",
+    "porto": "FC Porto",
+    "bor dortmund": "Borussia Dortmund",
+    "bayer 04 leverkusen": "Bayer Leverkusen",
+    "fenerbahce": "Fenerbahçe",
+    "super lig": "Süper Lig",
+    "uefa champions league": "Champions League",
+    "italie": "Italië",
+    "belgie": "België",
+    "brazilie": "Brazilië",
+    "argentinie": "Argentinië",
+    "kroatie": "Kroatië",
+    "servie": "Servië",
+    "tsjechie": "Tsjechië",
+    "copa america": "Copa América",
+}
+
+COUNTRY_CANONICAL = {
+    "netherlands": "Nederland",
+    "england": "Engeland",
+    "france": "Frankrijk",
+    "germany": "Duitsland",
+    "spain": "Spanje",
+    "italy": "Italië",
+    "brazil": "Brazilië",
+    "argentina": "Argentinië",
+    "belgium": "België",
+    "croatia": "Kroatië",
+    "denmark": "Denemarken",
+    "sweden": "Zweden",
+    "poland": "Polen",
+    "scotland": "Schotland",
+    "ireland": "Ierland",
+    "northern ireland": "Noord-Ierland",
+    "serbia": "Servië",
+    "czech republic": "Tsjechië",
+    "czechia": "Tsjechië",
+    "wales": "Wales",
+    "portugal": "Portugal",
+    "uruguay": "Uruguay",
+}
+
+
+TOPSCORER_AWARDS = {
+    "Topscorer Eredivisie": [
+        "Johan Cruijff","Marco van Basten","Dennis Bergkamp","Wim Kieft",
+        "Ruud Geels","Luis Suárez","Luis Suarez","Memphis Depay",
+        "Klaas-Jan Huntelaar","Mateja Kežman","Mateja Kezman","Romário","Romario"
+    ],
+    "Topscorer Premier League": [
+        "Thierry Henry","Robin van Persie","Cristiano Ronaldo","Didier Drogba",
+        "Mohamed Salah","Sergio Agüero","Sergio Aguero","Harry Kane",
+        "Erling Haaland","Ruud van Nistelrooy","Jamie Vardy","Nicolas Anelka"
+    ],
+    "Topscorer La Liga": [
+        "Lionel Messi","Cristiano Ronaldo","Ronaldo","Romário","Romario",
+        "Luis Suárez","Luis Suarez","Hugo Sánchez","Hugo Sanchez",
+        "Diego Forlán","Diego Forlan","Karim Benzema","Robert Lewandowski"
+    ],
+    "Topscorer Serie A": [
+        "Marco van Basten","Andriy Shevchenko","Gabriel Batistuta",
+        "Hernán Crespo","Hernan Crespo","Zlatan Ibrahimović","Zlatan Ibrahimovic",
+        "Cristiano Ronaldo","Ronaldo","Luca Toni","Ciro Immobile"
+    ],
+    "Topscorer Bundesliga": [
+        "Gerd Müller","Gerd Muller","Robert Lewandowski","Harry Kane",
+        "Mario Gómez","Mario Gomez","Grafite","Klaas-Jan Huntelaar"
+    ],
+    "Topscorer Ligue 1": [
+        "Kylian Mbappé","Kylian Mbappe","Zlatan Ibrahimović","Zlatan Ibrahimovic",
+        "Edinson Cavani","Jean-Pierre Papin","Sonny Anderson"
+    ],
+}
+
+def add_curated_topscorers(merged_players):
+    by_name = {}
+    for player in merged_players.values():
+        keys = {norm(player.get("name", ""))}
+        keys.update(norm(alias) for alias in (player.get("aliases") or []))
+        for key in keys:
+            if key:
+                by_name.setdefault(key, player)
+
+    added = 0
+    missing = []
+
+    for award, names in TOPSCORER_AWARDS.items():
+        for name in names:
+            player = by_name.get(norm(name))
+            if not player:
+                missing.append((award, name))
+                continue
+
+            player.setdefault("awards", [])
+            if not any(norm(value) == norm(award) for value in player["awards"]):
+                player["awards"].append(award)
+                added += 1
+
+    return added, missing
+
+JUNK = (
+    "career break","inactive","retired","retirement","without club","no club",
+    "free agent","unknown","end of career","not active","reserves","reserve",
+    "youth"," u21"," u20"," u19"," u18"," u17"," u16"," u15"
+)
+
+def norm(value: str) -> str:
+    value = str(value or "").strip()
+    value = unicodedata.normalize("NFKD", value)
+    value = "".join(ch for ch in value if not unicodedata.combining(ch))
+    value = value.casefold()
+    value = re.sub(r"\s+", " ", value)
+    return value
+
+def clean_name(value: str) -> str:
+    return re.sub(r"\s*\(\d+\)\s*$", "", str(value or "")).strip()
+
+def canonical(value: str) -> str:
+    raw = str(value or "").strip()
+    return CANONICAL.get(norm(raw), raw)
+
+def canonical_country(value: str) -> str:
+    raw = str(value or "").strip()
+    return COUNTRY_CANONICAL.get(norm(raw), canonical(raw))
+
+def split_countries(values):
+    """Transfermarkt zet dubbele nationaliteiten in één tekst met dubbele spaties."""
+    out = []
+    for value in values or []:
+        parts = re.split(r"\s{2,}", str(value or "").strip())
+        out.extend(part for part in parts if part)
+    return out
+
+def unique(values, field="generic"):
+    out, seen = [], set()
+    for value in values or []:
+        value = canonical_country(value) if field == "country" else canonical(value)
+        key = norm(value)
+        if value and key not in seen:
+            seen.add(key)
+            out.append(value)
+    return out
+
+def is_junk(value: str) -> bool:
+    n = f" {norm(value)} "
+    return any(term in n for term in JUNK)
+
+allowed_norm = {norm(x) for x in CLUBS | COUNTRIES | COMPETITIONS | AWARDS}
+
+if not SOURCE.exists():
+    raise SystemExit(f"Niet gevonden: {SOURCE}")
+
+with SOURCE.open("r", encoding="utf-8") as fh:
+    source = json.load(fh)
+
+source_records = source.get("players", [])
+legend_records = []
+if LEGENDS_SOURCE.exists():
+    with LEGENDS_SOURCE.open("r", encoding="utf-8") as fh:
+        legends_source = json.load(fh)
+    legend_records = (
+        legends_source if isinstance(legends_source, list)
+        else legends_source.get("players", [])
+    )
+
+correction_records = []
+if CORRECTIONS_SOURCE.exists():
+    with CORRECTIONS_SOURCE.open("r", encoding="utf-8") as fh:
+        corrections_source = json.load(fh)
+    correction_records = (
+        corrections_source if isinstance(corrections_source, list)
+        else corrections_source.get("players", [])
+    )
+
+# Bron eerst, legendes daarna. Records zonder bron-ID mogen daardoor aansluiten
+# op een al bestaande speler met dezelfde opgeschoonde naam.
+records = [*source_records, *legend_records, *correction_records]
+merged = {}
+name_to_key = {}
+
+# Eerst samenvoegen op stabiel bron-ID. Alleen records zonder ID vallen terug op naam.
+for raw in records:
+    name = clean_name(raw.get("name", ""))
+    if not name:
+        continue
+
+    source_id = str(raw.get("id") or "").strip()
+    name_keys = [norm(name)]
+    name_keys.extend(
+        norm(clean_name(alias))
+        for alias in (raw.get("aliases") or [])
+        if clean_name(alias)
+    )
+    existing_key = next((name_to_key[n] for n in name_keys if n in name_to_key), None)
+    key = f"id:{source_id}" if source_id else (existing_key or f"name:{norm(name)}")
+    player = merged.setdefault(key, {
+        "id": source_id or f"NAME-{norm(name).replace(' ', '-')}",
+        "name": name,
+        "aliases": [],
+        "clubs": [],
+        "internationalTeams": [],
+        "awards": [],
+        "competitions": [],
+        "image": raw.get("image") or raw.get("imageUrl") or raw.get("photo") or None,
+        "legend": bool(raw.get("legend"))
+    })
+
+    player["aliases"].extend(raw.get("aliases") or [])
+    player["clubs"].extend(raw.get("clubs") or [])
+    player["internationalTeams"].extend(split_countries(raw.get("internationalTeams") or []))
+    player["awards"].extend(raw.get("awards") or [])
+    player["competitions"].extend(raw.get("competitions") or [])
+    if not player["image"]:
+        player["image"] = raw.get("image") or raw.get("imageUrl") or raw.get("photo") or None
+    player["legend"] = player["legend"] or bool(raw.get("legend"))
+    for name_key in name_keys:
+        if name_key:
+            name_to_key.setdefault(name_key, key)
+
+topscorer_added, topscorer_missing = add_curated_topscorers(merged)
+
+# Daarna alleen spelrelevante waarden bewaren.
+players = []
+for player in merged.values():
+    player["aliases"] = unique([clean_name(x) for x in player["aliases"] if clean_name(x)])
+    player["clubs"] = unique([x for x in player["clubs"] if not is_junk(x)])
+    player["internationalTeams"] = unique(
+        [x for x in player["internationalTeams"] if not is_junk(x)],
+        field="country"
+    )
+    player["awards"] = unique([x for x in player["awards"] if not is_junk(x)])
+    player["competitions"] = unique([x for x in player["competitions"] if not is_junk(x)])
+
+    # Een antwoord moet bij twee aanwijzingen kunnen passen.
+    relevant_values = []
+    for field in ("clubs","internationalTeams","awards","competitions"):
+        relevant_values.extend(v for v in player[field] if norm(v) in allowed_norm)
+
+    if len({norm(v) for v in relevant_values}) < 2:
+        continue
+
+    # Verwijder niet-speelbare clue-waarden uit de runtime database.
+    for field in ("clubs","internationalTeams","awards","competitions"):
+        player[field] = [v for v in player[field] if norm(v) in allowed_norm]
+
+    players.append(player)
+
+players.sort(key=lambda p: norm(p["name"]))
+
+# Runtime indexes vooraf bouwen, zodat de browser dit niet meer hoeft te doen.
+clue_players = {}
+name_lookup = {}
+
+for index, player in enumerate(players):
+    names = [player["name"], *player["aliases"]]
+    for name in names:
+        key = norm(clean_name(name))
+        if key:
+            name_lookup.setdefault(key, []).append(index)
+
+    for field in ("clubs","internationalTeams","awards","competitions"):
+        for clue in player[field]:
+            key = norm(clue)
+            clue_players.setdefault(key, []).append(index)
+
+game_db = {
+    "version": 2,
+    "sourceVersion": source.get("version"),
+    "normalizationVersion": "2026-09-source-canonical-v2",
+    "legendsIntegrated": bool(legend_records),
+    "careerCorrectionsIntegrated": bool(correction_records),
+    "playerCount": len(players),
+    "players": players,
+    "nameLookup": name_lookup,
+    "cluePlayers": clue_players
+}
+
+with TARGET.open("w", encoding="utf-8") as fh:
+    json.dump(game_db, fh, ensure_ascii=False, separators=(",", ":"))
+
+src_size = SOURCE.stat().st_size / (1024 * 1024)
+dst_size = TARGET.stat().st_size / (1024 * 1024)
+
+print()
+print("FOOTBALLMIND GAME DATABASE KLAAR")
+print("--------------------------------")
+print(f"Bronrecords       : {len(source_records):,}".replace(",", "."))
+print(f"Legenderecords    : {len(legend_records):,}".replace(",", "."))
+print(f"Loopbaancorrecties: {len(correction_records):,}".replace(",", "."))
+print(f"Unieke bronspelers: {len(merged):,}".replace(",", "."))
+print(f"Spelers in game-db: {len(players):,}".replace(",", "."))
+print(f"Bronbestand       : {src_size:.1f} MB")
+print(f"Gamebestand       : {dst_size:.1f} MB")
+print(f"Topscorer-labels  : {topscorer_added:,}".replace(",", "."))
+print(f"Bestand gemaakt   : {TARGET}")
+if topscorer_missing:
+    unique_missing = []
+    seen_missing = set()
+    for award, name in topscorer_missing:
+        key = (award, norm(name))
+        if key not in seen_missing:
+            seen_missing.add(key)
+            unique_missing.append((award, name))
+
+    print()
+    print(f"Niet gevonden topscorers: {len(unique_missing)}")
+    for award, name in unique_missing[:20]:
+        print(f"  - {award}: {name}")
+    if len(unique_missing) > 20:
+        print(f"  ... en nog {len(unique_missing) - 20}")
+
+print()
+print("FootballMind kan nu dit snelle bestand gebruiken.")

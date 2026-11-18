@@ -1,0 +1,1211 @@
+{
+  "version": 5,
+  "description": "Centrale spelkoppelingen: een carrièreclub telt voor de gekoppelde competitie, onafhankelijk van seizoen. Dit is een spelregel, geen historisch bewijs van gespeelde competitiewedstrijden.",
+  "aliases": {
+    "ajax": "Ajax",
+    "psv": "PSV",
+    "feyenoord": "Feyenoord",
+    "az": "AZ",
+    "fc twente": "FC Twente",
+    "fc groningen": "FC Groningen",
+    "sc heerenveen": "SC Heerenveen",
+    "sparta rotterdam": "Sparta Rotterdam",
+    "fc utrecht": "FC Utrecht",
+    "vitesse": "Vitesse",
+    "nec": "NEC",
+    "willem ii": "Willem II",
+    "nac breda": "NAC Breda",
+    "roda jc": "Roda JC",
+    "ado den haag": "ADO Den Haag",
+    "go ahead eagles": "Go Ahead Eagles",
+    "pec zwolle": "PEC Zwolle",
+    "heracles almelo": "Heracles Almelo",
+    "fortuna sittard": "Fortuna Sittard",
+    "rkc waalwijk": "RKC Waalwijk",
+    "manchester united": "Manchester United",
+    "manchester city": "Manchester City",
+    "liverpool": "Liverpool",
+    "arsenal": "Arsenal",
+    "chelsea": "Chelsea",
+    "tottenham hotspur": "Tottenham Hotspur",
+    "newcastle united": "Newcastle United",
+    "aston villa": "Aston Villa",
+    "everton": "Everton",
+    "leeds united": "Leeds United",
+    "southampton": "Southampton",
+    "west ham united": "West Ham United",
+    "nottingham forest": "Nottingham Forest",
+    "leicester city": "Leicester City",
+    "wolverhampton wanderers": "Wolverhampton Wanderers",
+    "fulham": "Fulham",
+    "crystal palace": "Crystal Palace",
+    "blackburn rovers": "Blackburn Rovers",
+    "sunderland": "Sunderland",
+    "middlesbrough": "Middlesbrough",
+    "west bromwich albion": "West Bromwich Albion",
+    "bolton wanderers": "Bolton Wanderers",
+    "birmingham city": "Birmingham City",
+    "portsmouth": "Portsmouth",
+    "stoke city": "Stoke City",
+    "swansea city": "Swansea City",
+    "watford": "Watford",
+    "burnley": "Burnley",
+    "barcelona": "Barcelona",
+    "real madrid": "Real Madrid",
+    "atletico madrid": "Atlético Madrid",
+    "valencia": "Valencia",
+    "sevilla": "Sevilla",
+    "real sociedad": "Real Sociedad",
+    "villarreal": "Villarreal",
+    "real betis": "Real Betis",
+    "athletic bilbao": "Athletic Bilbao",
+    "celta vigo": "Celta Vigo",
+    "espanyol": "Espanyol",
+    "deportivo la coruna": "Deportivo La Coruña",
+    "real zaragoza": "Real Zaragoza",
+    "levante": "Levante",
+    "eibar": "Eibar",
+    "bayern munchen": "Bayern München",
+    "borussia dortmund": "Borussia Dortmund",
+    "bayer leverkusen": "Bayer Leverkusen",
+    "schalke 04": "Schalke 04",
+    "werder bremen": "Werder Bremen",
+    "wolfsburg": "Wolfsburg",
+    "hamburger sv": "Hamburger SV",
+    "borussia monchengladbach": "Borussia Mönchengladbach",
+    "vfb stuttgart": "VfB Stuttgart",
+    "eintracht frankfurt": "Eintracht Frankfurt",
+    "rb leipzig": "RB Leipzig",
+    "tsg hoffenheim": "TSG Hoffenheim",
+    "juventus": "Juventus",
+    "ac milan": "AC Milan",
+    "inter": "Inter",
+    "as roma": "AS Roma",
+    "napoli": "Napoli",
+    "lazio": "Lazio",
+    "fiorentina": "Fiorentina",
+    "sampdoria": "Sampdoria",
+    "atalanta": "Atalanta",
+    "bologna": "Bologna",
+    "torino": "Torino",
+    "udinese": "Udinese",
+    "genoa": "Genoa",
+    "parma": "Parma",
+    "hellas verona": "Hellas Verona",
+    "palermo": "Palermo",
+    "brescia": "Brescia",
+    "empoli": "Empoli",
+    "cagliari": "Cagliari",
+    "lecce": "Lecce",
+    "sassuolo": "Sassuolo",
+    "modena": "Modena",
+    "vicenza": "Vicenza",
+    "paris saint-germain": "Paris Saint-Germain",
+    "olympique marseille": "Olympique Marseille",
+    "as monaco": "AS Monaco",
+    "olympique lyon": "Olympique Lyon",
+    "lille osc": "Lille OSC",
+    "nice": "OGC Nice",
+    "rennes": "Rennes",
+    "nantes": "Nantes",
+    "bordeaux": "Bordeaux",
+    "saint-etienne": "Saint-Étienne",
+    "auxerre": "Auxerre",
+    "montpellier": "Montpellier",
+    "lens": "Lens",
+    "le mans": "Le Mans",
+    "guingamp": "Guingamp",
+    "benfica": "Benfica",
+    "fc porto": "FC Porto",
+    "sporting cp": "Sporting CP",
+    "braga": "Braga",
+    "boavista": "Boavista",
+    "beira-mar": "Beira-Mar",
+    "celtic": "Celtic",
+    "rangers": "Rangers",
+    "aberdeen": "Aberdeen",
+    "hearts": "Hearts",
+    "hibernian": "Hibernian",
+    "galatasaray": "Galatasaray",
+    "fenerbahce": "Fenerbahçe",
+    "besiktas": "Beşiktaş",
+    "trabzonspor": "Trabzonspor",
+    "rangers fc": "Rangers",
+    "glasgow rangers": "Rangers",
+    "glasgow rangers fc": "Rangers",
+    "inter milan": "Inter",
+    "internazionale": "Inter",
+    "internazionale milano": "Inter",
+    "bayern munich": "Bayern München",
+    "fc bayern munich": "Bayern München",
+    "fc bayern munchen": "Bayern München",
+    "man utd": "Manchester United",
+    "manchester utd": "Manchester United",
+    "man city": "Manchester City",
+    "paris sg": "Paris Saint-Germain",
+    "paris saint germain": "Paris Saint-Germain",
+    "psg": "Paris Saint-Germain",
+    "psv eindhoven": "PSV",
+    "az alkmaar": "AZ",
+    "fc barcelona": "Barcelona",
+    "liverpool fc": "Liverpool",
+    "arsenal fc": "Arsenal",
+    "chelsea fc": "Chelsea",
+    "netherlands": "Nederland",
+    "england": "Engeland",
+    "france": "Frankrijk",
+    "germany": "Duitsland",
+    "spain": "Spanje",
+    "italy": "Italië",
+    "brazil": "Brazilië",
+    "argentina": "Argentinië",
+    "belgium": "België",
+    "croatia": "Kroatië",
+    "denmark": "Denemarken",
+    "sweden": "Zweden",
+    "poland": "Polen",
+    "scotland": "Schotland",
+    "ireland": "Ierland",
+    "northern ireland": "Noord-Ierland",
+    "serbia": "Servië",
+    "czech republic": "Tsjechië",
+    "marseille": "Olympique Marseille",
+    "monaco": "AS Monaco",
+    "porto": "FC Porto",
+    "super lig": "Süper Lig",
+    "uefa champions league": "Champions League",
+    "ajax amsterdam": "Ajax",
+    "afc ajax": "Ajax",
+    "ss lazio": "Lazio",
+    "s.s. lazio": "Lazio",
+    "ajax cape town": "Ajax Cape Town",
+    "fc internazionale": "Inter",
+    "olympique lyonnais": "Olympique Lyon",
+    "lyon": "Olympique Lyon",
+    "sporting lisbon": "Sporting CP",
+    "real madrid cf": "Real Madrid",
+    "real madrid club de futbol": "Real Madrid",
+    "nederland": "Nederland",
+    "holland": "Nederland",
+    "ogc nice": "OGC Nice",
+    "al-gharafa": "Al-Gharafa",
+    "al gharafa": "Al-Gharafa",
+    "al gharafa sc": "Al-Gharafa",
+    "al-gharafa sc": "Al-Gharafa"
+  },
+  "clubCompetitions": {
+    "Ajax": [
+      "Eredivisie"
+    ],
+    "PSV": [
+      "Eredivisie"
+    ],
+    "Feyenoord": [
+      "Eredivisie"
+    ],
+    "AZ": [
+      "Eredivisie"
+    ],
+    "FC Twente": [
+      "Eredivisie"
+    ],
+    "FC Groningen": [
+      "Eredivisie"
+    ],
+    "SC Heerenveen": [
+      "Eredivisie"
+    ],
+    "Sparta Rotterdam": [
+      "Eredivisie"
+    ],
+    "FC Utrecht": [
+      "Eredivisie"
+    ],
+    "Vitesse": [
+      "Eredivisie"
+    ],
+    "NEC": [
+      "Eredivisie"
+    ],
+    "Willem II": [
+      "Eredivisie"
+    ],
+    "NAC Breda": [
+      "Eredivisie"
+    ],
+    "Roda JC": [
+      "Eredivisie"
+    ],
+    "ADO Den Haag": [
+      "Eredivisie"
+    ],
+    "Go Ahead Eagles": [
+      "Eredivisie"
+    ],
+    "PEC Zwolle": [
+      "Eredivisie"
+    ],
+    "Heracles Almelo": [
+      "Eredivisie"
+    ],
+    "Fortuna Sittard": [
+      "Eredivisie"
+    ],
+    "RKC Waalwijk": [
+      "Eredivisie"
+    ],
+    "Manchester United": [
+      "Premier League"
+    ],
+    "Manchester City": [
+      "Premier League"
+    ],
+    "Liverpool": [
+      "Premier League"
+    ],
+    "Arsenal": [
+      "Premier League"
+    ],
+    "Chelsea": [
+      "Premier League"
+    ],
+    "Tottenham Hotspur": [
+      "Premier League"
+    ],
+    "Newcastle United": [
+      "Premier League"
+    ],
+    "Aston Villa": [
+      "Premier League"
+    ],
+    "Everton": [
+      "Premier League"
+    ],
+    "Leeds United": [
+      "Premier League"
+    ],
+    "Southampton": [
+      "Premier League"
+    ],
+    "West Ham United": [
+      "Premier League"
+    ],
+    "Nottingham Forest": [
+      "Premier League"
+    ],
+    "Leicester City": [
+      "Premier League"
+    ],
+    "Wolverhampton Wanderers": [
+      "Premier League"
+    ],
+    "Fulham": [
+      "Premier League"
+    ],
+    "Crystal Palace": [
+      "Premier League"
+    ],
+    "Blackburn Rovers": [
+      "Premier League"
+    ],
+    "Sunderland": [
+      "Premier League"
+    ],
+    "Middlesbrough": [
+      "Premier League"
+    ],
+    "West Bromwich Albion": [
+      "Premier League"
+    ],
+    "Bolton Wanderers": [
+      "Premier League"
+    ],
+    "Birmingham City": [
+      "Premier League"
+    ],
+    "Portsmouth": [
+      "Premier League"
+    ],
+    "Stoke City": [
+      "Premier League"
+    ],
+    "Swansea City": [
+      "Premier League"
+    ],
+    "Watford": [
+      "Premier League"
+    ],
+    "Burnley": [
+      "Premier League"
+    ],
+    "Barcelona": [
+      "La Liga"
+    ],
+    "Real Madrid": [
+      "La Liga"
+    ],
+    "Atlético Madrid": [
+      "La Liga"
+    ],
+    "Valencia": [
+      "La Liga"
+    ],
+    "Sevilla": [
+      "La Liga"
+    ],
+    "Real Sociedad": [
+      "La Liga"
+    ],
+    "Villarreal": [
+      "La Liga"
+    ],
+    "Real Betis": [
+      "La Liga"
+    ],
+    "Athletic Bilbao": [
+      "La Liga"
+    ],
+    "Celta Vigo": [
+      "La Liga"
+    ],
+    "Espanyol": [
+      "La Liga"
+    ],
+    "Deportivo La Coruña": [
+      "La Liga"
+    ],
+    "Real Zaragoza": [
+      "La Liga"
+    ],
+    "Levante": [
+      "La Liga"
+    ],
+    "Eibar": [
+      "La Liga"
+    ],
+    "Bayern München": [
+      "Bundesliga"
+    ],
+    "Borussia Dortmund": [
+      "Bundesliga"
+    ],
+    "Bayer Leverkusen": [
+      "Bundesliga"
+    ],
+    "Schalke 04": [
+      "Bundesliga"
+    ],
+    "Werder Bremen": [
+      "Bundesliga"
+    ],
+    "Wolfsburg": [
+      "Bundesliga"
+    ],
+    "Hamburger SV": [
+      "Bundesliga"
+    ],
+    "Borussia Mönchengladbach": [
+      "Bundesliga"
+    ],
+    "VfB Stuttgart": [
+      "Bundesliga"
+    ],
+    "Eintracht Frankfurt": [
+      "Bundesliga"
+    ],
+    "RB Leipzig": [
+      "Bundesliga"
+    ],
+    "TSG Hoffenheim": [
+      "Bundesliga"
+    ],
+    "Juventus": [
+      "Serie A"
+    ],
+    "AC Milan": [
+      "Serie A"
+    ],
+    "Inter": [
+      "Serie A"
+    ],
+    "AS Roma": [
+      "Serie A"
+    ],
+    "Napoli": [
+      "Serie A"
+    ],
+    "Lazio": [
+      "Serie A"
+    ],
+    "Fiorentina": [
+      "Serie A"
+    ],
+    "Sampdoria": [
+      "Serie A"
+    ],
+    "Atalanta": [
+      "Serie A"
+    ],
+    "Bologna": [
+      "Serie A"
+    ],
+    "Torino": [
+      "Serie A"
+    ],
+    "Udinese": [
+      "Serie A"
+    ],
+    "Genoa": [
+      "Serie A"
+    ],
+    "Parma": [
+      "Serie A"
+    ],
+    "Hellas Verona": [
+      "Serie A"
+    ],
+    "Palermo": [
+      "Serie A"
+    ],
+    "Brescia": [
+      "Serie A"
+    ],
+    "Empoli": [
+      "Serie A"
+    ],
+    "Cagliari": [
+      "Serie A"
+    ],
+    "Lecce": [
+      "Serie A"
+    ],
+    "Sassuolo": [
+      "Serie A"
+    ],
+    "Modena": [
+      "Serie A"
+    ],
+    "Vicenza": [
+      "Serie A"
+    ],
+    "Paris Saint-Germain": [
+      "Ligue 1"
+    ],
+    "Olympique Marseille": [
+      "Ligue 1"
+    ],
+    "AS Monaco": [
+      "Ligue 1"
+    ],
+    "Olympique Lyon": [
+      "Ligue 1"
+    ],
+    "Lille OSC": [
+      "Ligue 1"
+    ],
+    "Rennes": [
+      "Ligue 1"
+    ],
+    "Nantes": [
+      "Ligue 1"
+    ],
+    "Bordeaux": [
+      "Ligue 1"
+    ],
+    "Saint-Étienne": [
+      "Ligue 1"
+    ],
+    "Auxerre": [
+      "Ligue 1"
+    ],
+    "Montpellier": [
+      "Ligue 1"
+    ],
+    "Lens": [
+      "Ligue 1"
+    ],
+    "Le Mans": [
+      "Ligue 1"
+    ],
+    "Guingamp": [
+      "Ligue 1"
+    ],
+    "Benfica": [
+      "Primeira Liga"
+    ],
+    "FC Porto": [
+      "Primeira Liga"
+    ],
+    "Sporting CP": [
+      "Primeira Liga"
+    ],
+    "Braga": [
+      "Primeira Liga"
+    ],
+    "Boavista": [
+      "Primeira Liga"
+    ],
+    "Beira-Mar": [
+      "Primeira Liga"
+    ],
+    "Celtic": [
+      "Scottish Premiership"
+    ],
+    "Rangers": [
+      "Scottish Premiership"
+    ],
+    "Aberdeen": [
+      "Scottish Premiership"
+    ],
+    "Hearts": [
+      "Scottish Premiership"
+    ],
+    "Hibernian": [
+      "Scottish Premiership"
+    ],
+    "Galatasaray": [
+      "Süper Lig"
+    ],
+    "Fenerbahçe": [
+      "Süper Lig"
+    ],
+    "Beşiktaş": [
+      "Süper Lig"
+    ],
+    "Trabzonspor": [
+      "Süper Lig"
+    ],
+    "OGC Nice": [
+      "Ligue 1"
+    ]
+  },
+  "playerAwards": {
+    "johan cruijff": [
+      "Topscorer Eredivisie",
+      "Champions League winnaar"
+    ],
+    "marco van basten": [
+      "Topscorer Eredivisie",
+      "Topscorer Serie A",
+      "Champions League winnaar"
+    ],
+    "dennis bergkamp": [
+      "Topscorer Eredivisie"
+    ],
+    "wim kieft": [
+      "Topscorer Eredivisie",
+      "Champions League winnaar"
+    ],
+    "ruud geels": [
+      "Topscorer Eredivisie"
+    ],
+    "luis suarez": [
+      "Topscorer Eredivisie",
+      "Champions League winnaar"
+    ],
+    "memphis depay": [
+      "Topscorer Eredivisie"
+    ],
+    "klaas jan huntelaar": [
+      "Topscorer Eredivisie",
+      "Topscorer Bundesliga"
+    ],
+    "mateja kezman": [
+      "Topscorer Eredivisie"
+    ],
+    "romario": [
+      "Topscorer Eredivisie",
+      "Topscorer La Liga"
+    ],
+    "thierry henry": [
+      "Topscorer Premier League",
+      "Champions League winnaar"
+    ],
+    "robin van persie": [
+      "Topscorer Premier League"
+    ],
+    "cristiano ronaldo": [
+      "Topscorer Premier League",
+      "Topscorer La Liga",
+      "Topscorer Serie A",
+      "Champions League winnaar"
+    ],
+    "didier drogba": [
+      "Topscorer Premier League",
+      "Champions League winnaar"
+    ],
+    "mohamed salah": [
+      "Topscorer Premier League",
+      "Champions League winnaar"
+    ],
+    "sergio aguero": [
+      "Topscorer Premier League"
+    ],
+    "harry kane": [
+      "Topscorer Premier League",
+      "Topscorer Bundesliga"
+    ],
+    "erling haaland": [
+      "Topscorer Premier League"
+    ],
+    "ruud van nistelrooy": [
+      "Topscorer Premier League"
+    ],
+    "jamie vardy": [
+      "Topscorer Premier League"
+    ],
+    "nicolas anelka": [
+      "Topscorer Premier League"
+    ],
+    "lionel messi": [
+      "Topscorer La Liga",
+      "Champions League winnaar"
+    ],
+    "ronaldo": [
+      "Topscorer La Liga",
+      "Topscorer Serie A"
+    ],
+    "hugo sanchez": [
+      "Topscorer La Liga"
+    ],
+    "diego forlan": [
+      "Topscorer La Liga"
+    ],
+    "karim benzema": [
+      "Topscorer La Liga",
+      "Champions League winnaar"
+    ],
+    "robert lewandowski": [
+      "Topscorer La Liga",
+      "Topscorer Bundesliga",
+      "Champions League winnaar"
+    ],
+    "andriy shevchenko": [
+      "Topscorer Serie A",
+      "Champions League winnaar"
+    ],
+    "gabriel batistuta": [
+      "Topscorer Serie A"
+    ],
+    "hernan crespo": [
+      "Topscorer Serie A"
+    ],
+    "zlatan ibrahimovic": [
+      "Topscorer Serie A",
+      "Topscorer Ligue 1"
+    ],
+    "luca toni": [
+      "Topscorer Serie A"
+    ],
+    "ciro immobile": [
+      "Topscorer Serie A"
+    ],
+    "gerd muller": [
+      "Topscorer Bundesliga",
+      "Champions League winnaar"
+    ],
+    "mario gomez": [
+      "Topscorer Bundesliga"
+    ],
+    "grafite": [
+      "Topscorer Bundesliga"
+    ],
+    "kylian mbappe": [
+      "Topscorer Ligue 1"
+    ],
+    "edinson cavani": [
+      "Topscorer Ligue 1"
+    ],
+    "jean pierre papin": [
+      "Topscorer Ligue 1"
+    ],
+    "sonny anderson": [
+      "Topscorer Ligue 1"
+    ],
+    "johan neeskens": [
+      "Champions League winnaar"
+    ],
+    "ruud krol": [
+      "Champions League winnaar"
+    ],
+    "piet keizer": [
+      "Champions League winnaar"
+    ],
+    "sjaak swart": [
+      "Champions League winnaar"
+    ],
+    "arie haan": [
+      "Champions League winnaar"
+    ],
+    "wim suurbier": [
+      "Champions League winnaar"
+    ],
+    "frank rijkaard": [
+      "Champions League winnaar"
+    ],
+    "danny blind": [
+      "Champions League winnaar"
+    ],
+    "edwin van der sar": [
+      "Champions League winnaar"
+    ],
+    "frank de boer": [
+      "Champions League winnaar"
+    ],
+    "ronald de boer": [
+      "Champions League winnaar"
+    ],
+    "clarence seedorf": [
+      "Champions League winnaar"
+    ],
+    "edgar davids": [
+      "Champions League winnaar"
+    ],
+    "patrick kluivert": [
+      "Champions League winnaar"
+    ],
+    "marc overmars": [
+      "Champions League winnaar"
+    ],
+    "jari litmanen": [
+      "Champions League winnaar"
+    ],
+    "nwankwo kanu": [
+      "Champions League winnaar"
+    ],
+    "finidi george": [
+      "Champions League winnaar"
+    ],
+    "ruud gullit": [
+      "Champions League winnaar"
+    ],
+    "ronald koeman": [
+      "Champions League winnaar"
+    ],
+    "hans van breukelen": [
+      "Champions League winnaar"
+    ],
+    "berry van aerle": [
+      "Champions League winnaar"
+    ],
+    "gerald vanenburg": [
+      "Champions League winnaar"
+    ],
+    "coen moulijn": [
+      "Champions League winnaar"
+    ],
+    "willem van hanegem": [
+      "Champions League winnaar"
+    ],
+    "franz beckenbauer": [
+      "Champions League winnaar"
+    ],
+    "sepp maier": [
+      "Champions League winnaar"
+    ],
+    "paul breitner": [
+      "Champions League winnaar"
+    ],
+    "oliver kahn": [
+      "Champions League winnaar"
+    ],
+    "stefan effenberg": [
+      "Champions League winnaar"
+    ],
+    "philipp lahm": [
+      "Champions League winnaar"
+    ],
+    "bastian schweinsteiger": [
+      "Champions League winnaar"
+    ],
+    "thomas muller": [
+      "Champions League winnaar"
+    ],
+    "manuel neuer": [
+      "Champions League winnaar"
+    ],
+    "arjen robben": [
+      "Champions League winnaar"
+    ],
+    "franck ribery": [
+      "Champions League winnaar"
+    ],
+    "javier zanetti": [
+      "Champions League winnaar"
+    ],
+    "diego milito": [
+      "Champions League winnaar"
+    ],
+    "wesley sneijder": [
+      "Champions League winnaar"
+    ],
+    "samuel eto'o": [
+      "Champions League winnaar"
+    ],
+    "julio cesar": [
+      "Champions League winnaar"
+    ],
+    "maicon": [
+      "Champions League winnaar"
+    ],
+    "lucio": [
+      "Champions League winnaar"
+    ],
+    "walter samuel": [
+      "Champions League winnaar"
+    ],
+    "esteban cambiasso": [
+      "Champions League winnaar"
+    ],
+    "marco materazzi": [
+      "Champions League winnaar"
+    ],
+    "dejan stankovic": [
+      "Champions League winnaar"
+    ],
+    "goran pandev": [
+      "Champions League winnaar"
+    ],
+    "thiago motta": [
+      "Champions League winnaar"
+    ],
+    "cristian chivu": [
+      "Champions League winnaar"
+    ],
+    "franco baresi": [
+      "Champions League winnaar"
+    ],
+    "paolo maldini": [
+      "Champions League winnaar"
+    ],
+    "alessandro costacurta": [
+      "Champions League winnaar"
+    ],
+    "roberto donadoni": [
+      "Champions League winnaar"
+    ],
+    "kaka": [
+      "Champions League winnaar"
+    ],
+    "andrea pirlo": [
+      "Champions League winnaar"
+    ],
+    "alessandro nesta": [
+      "Champions League winnaar"
+    ],
+    "gennaro gattuso": [
+      "Champions League winnaar"
+    ],
+    "filippo inzaghi": [
+      "Champions League winnaar"
+    ],
+    "dida": [
+      "Champions League winnaar"
+    ],
+    "cafu": [
+      "Champions League winnaar"
+    ],
+    "marcel desailly": [
+      "Champions League winnaar"
+    ],
+    "michel platini": [
+      "Champions League winnaar"
+    ],
+    "gaetano scirea": [
+      "Champions League winnaar"
+    ],
+    "alessandro del piero": [
+      "Champions League winnaar"
+    ],
+    "gianluca vialli": [
+      "Champions League winnaar"
+    ],
+    "fabrizio ravanelli": [
+      "Champions League winnaar"
+    ],
+    "angelo peruzzi": [
+      "Champions League winnaar"
+    ],
+    "didier deschamps": [
+      "Champions League winnaar"
+    ],
+    "zinedine zidane": [
+      "Champions League winnaar"
+    ],
+    "alfredo di stefano": [
+      "Champions League winnaar"
+    ],
+    "ferenc puskas": [
+      "Champions League winnaar"
+    ],
+    "paco gento": [
+      "Champions League winnaar"
+    ],
+    "raul": [
+      "Champions League winnaar"
+    ],
+    "iker casillas": [
+      "Champions League winnaar"
+    ],
+    "roberto carlos": [
+      "Champions League winnaar"
+    ],
+    "luka modric": [
+      "Champions League winnaar"
+    ],
+    "toni kroos": [
+      "Champions League winnaar"
+    ],
+    "gareth bale": [
+      "Champions League winnaar"
+    ],
+    "sergio ramos": [
+      "Champions League winnaar"
+    ],
+    "marcelo": [
+      "Champions League winnaar"
+    ],
+    "luis figo": [
+      "Champions League winnaar"
+    ],
+    "david beckham": [
+      "Champions League winnaar"
+    ],
+    "carles puyol": [
+      "Champions League winnaar"
+    ],
+    "xavi": [
+      "Champions League winnaar"
+    ],
+    "andres iniesta": [
+      "Champions League winnaar"
+    ],
+    "ronaldinho": [
+      "Champions League winnaar"
+    ],
+    "sergio busquets": [
+      "Champions League winnaar"
+    ],
+    "gerard pique": [
+      "Champions League winnaar"
+    ],
+    "dani alves": [
+      "Champions League winnaar"
+    ],
+    "neymar": [
+      "Champions League winnaar"
+    ],
+    "david villa": [
+      "Champions League winnaar"
+    ],
+    "pedro": [
+      "Champions League winnaar"
+    ],
+    "javier mascherano": [
+      "Champions League winnaar"
+    ],
+    "bobby charlton": [
+      "Champions League winnaar"
+    ],
+    "george best": [
+      "Champions League winnaar"
+    ],
+    "peter schmeichel": [
+      "Champions League winnaar"
+    ],
+    "ryan giggs": [
+      "Champions League winnaar"
+    ],
+    "paul scholes": [
+      "Champions League winnaar"
+    ],
+    "roy keane": [
+      "Champions League winnaar"
+    ],
+    "wayne rooney": [
+      "Champions League winnaar"
+    ],
+    "rio ferdinand": [
+      "Champions League winnaar"
+    ],
+    "nemanja vidic": [
+      "Champions League winnaar"
+    ],
+    "nani": [
+      "Champions League winnaar"
+    ],
+    "carlos tevez": [
+      "Champions League winnaar"
+    ],
+    "kenny dalglish": [
+      "Champions League winnaar"
+    ],
+    "ian rush": [
+      "Champions League winnaar"
+    ],
+    "graeme souness": [
+      "Champions League winnaar"
+    ],
+    "steven gerrard": [
+      "Champions League winnaar"
+    ],
+    "sadio mane": [
+      "Champions League winnaar"
+    ],
+    "virgil van dijk": [
+      "Champions League winnaar"
+    ],
+    "alisson": [
+      "Champions League winnaar"
+    ],
+    "roberto firmino": [
+      "Champions League winnaar"
+    ],
+    "trent alexander-arnold": [
+      "Champions League winnaar"
+    ],
+    "frank lampard": [
+      "Champions League winnaar"
+    ],
+    "john terry": [
+      "Champions League winnaar"
+    ],
+    "petr cech": [
+      "Champions League winnaar"
+    ],
+    "ashley cole": [
+      "Champions League winnaar"
+    ],
+    "n'golo kante": [
+      "Champions League winnaar"
+    ],
+    "mason mount": [
+      "Champions League winnaar"
+    ],
+    "kai havertz": [
+      "Champions League winnaar"
+    ],
+    "cesar azpilicueta": [
+      "Champions League winnaar"
+    ],
+    "reece james": [
+      "Champions League winnaar"
+    ],
+    "antonio rudiger": [
+      "Champions League winnaar"
+    ],
+    "thiago silva": [
+      "Champions League winnaar"
+    ],
+    "rudi voller": [
+      "Champions League winnaar"
+    ],
+    "matthias sammer": [
+      "Champions League winnaar"
+    ],
+    "karl-heinz riedle": [
+      "Champions League winnaar"
+    ],
+    "andreas moller": [
+      "Champions League winnaar"
+    ],
+    "jurgen kohler": [
+      "Champions League winnaar"
+    ],
+    "deco": [
+      "Champions League winnaar"
+    ],
+    "ricardo carvalho": [
+      "Champions League winnaar"
+    ],
+    "paulo ferreira": [
+      "Champions League winnaar"
+    ],
+    "maniche": [
+      "Champions League winnaar"
+    ],
+    "costinha": [
+      "Champions League winnaar"
+    ],
+    "fabien barthez": [
+      "Champions League winnaar"
+    ],
+    "basile boli": [
+      "Champions League winnaar"
+    ]
+  },
+  "rules": {
+    "allowPlayerReuse": true
+  },
+  "cupCompetitions": [
+    {
+      "id": "european_cup",
+      "name": "Europacup I",
+      "family": "european_champions",
+      "firstSeasonStart": 1955,
+      "lastSeasonStart": 1991
+    },
+    {
+      "id": "champions_league",
+      "name": "UEFA Champions League",
+      "family": "european_champions",
+      "firstSeasonStart": 1992,
+      "lastSeasonStart": null
+    },
+    {
+      "id": "cup_winners_cup",
+      "name": "Europacup II",
+      "family": "cup_winners",
+      "firstSeasonStart": 1960,
+      "lastSeasonStart": 1998
+    },
+    {
+      "id": "uefa_cup",
+      "name": "UEFA Cup",
+      "family": "uefa_europa",
+      "firstSeasonStart": 1971,
+      "lastSeasonStart": 2008
+    },
+    {
+      "id": "europa_league",
+      "name": "UEFA Europa League",
+      "family": "uefa_europa",
+      "firstSeasonStart": 2009,
+      "lastSeasonStart": null
+    },
+    {
+      "id": "conference_league",
+      "name": "UEFA Conference League",
+      "family": "conference",
+      "firstSeasonStart": 2021,
+      "lastSeasonStart": null
+    },
+    {
+      "id": "uefa_super_cup",
+      "name": "UEFA Super Cup",
+      "family": "super_cup",
+      "firstSeasonStart": 1973,
+      "lastSeasonStart": null
+    },
+    {
+      "id": "intertoto_cup",
+      "name": "UEFA Intertoto Cup",
+      "family": "intertoto",
+      "firstSeasonStart": 1995,
+      "lastSeasonStart": 2008
+    },
+    {
+      "id": "fairs_cup",
+      "name": "Jaarbeursstedenbeker",
+      "family": "fairs_cup",
+      "firstSeasonStart": 1955,
+      "lastSeasonStart": 1970
+    }
+  ],
+  "cupDataPolicy": {
+    "membership": "full_winning_squad_including_reserves",
+    "scope": "European club cups; historical names retained",
+    "complete": false,
+    "notes": "Catalogue is not evidence of player participation or a win. Only explicit sourced cupWins count. Fairs Cup and UEFA Cup remain separate; Conference League is not a continuation of Cup Winners Cup."
+  }
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FootballMind</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="solo.css?v=1">
+</head>
+<body>
+  <div class="fm-page">
+
+    <header class="fm-header">
+      <section class="fm-level-card">
+        <div class="fm-mini-title">🏆 LEVEL</div>
+        <div class="fm-level-row">
+          <strong id="levelText">GEMIDDELD</strong>
+          <select id="difficulty" aria-label="Moeilijkheid">
+            <option value="easy">Makkelijk</option>
+            <option value="medium" selected>Gemiddeld</option>
+            <option value="hard">Moeilijk</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="fm-brand">
+        <div class="fm-brand-mark">★ ★ ★</div>
+        <h1>FOOTBALLMIND</h1>
+        <div class="fm-slogan"><span></span>KNOW FOOTBALL. CLAIM THE BOARD.<span></span></div>
+      </section>
+
+      <button class="fm-settings" type="button">⚙ INSTELLINGEN</button>
+    </header>
+
+    <main class="fm-layout">
+      <section class="fm-game-column">
+        <div class="fm-pitch-shell">
+          <section id="board" class="board" aria-label="FootballMind speelbord"></section>
+        </div>
+
+        <div class="fm-status-row">
+          <span id="message" role="status"></span>
+          <span id="sourceStatus">Database laden...</span>
+          <span class="fm-hidden-counter"><span id="filled">0</span> / 9</span>
+        </div>
+
+        <nav class="fm-bottom-nav" aria-label="Spelacties">
+          <button type="button" class="fm-nav-btn">▣ CATEGORIEËN</button>
+          <button type="button" class="fm-nav-btn muted" disabled>↶ ONGEDAAN MAKEN</button>
+          <button id="newGame" type="button" class="fm-nav-btn primary">⟳ NIEUW SPEL</button>
+          <button type="button" class="fm-nav-btn">▥ STATISTIEKEN</button>
+        </nav>
+      </section>
+
+      <aside class="fm-sidebar">
+        <section class="fm-panel fm-turn-panel">
+          <h2>BEURT</h2>
+          <div class="fm-player active">
+            <span class="fm-player-avatar p1"></span>
+            <div><strong>SPELER</strong><small>1</small></div>
+            <b>0</b>
+          </div>
+          <div class="fm-player">
+            <span class="fm-player-avatar p2"></span>
+            <div><strong>SPELER</strong><small>2</small></div>
+            <b>0</b>
+          </div>
+          <p class="fm-one-answer">ÉÉN ANTWOORD PER BEURT</p>
+        </section>
+
+        <section class="fm-panel">
+          <h2>HOE HET WERKT</h2>
+          <div class="fm-howto">
+            <p><span>⌕</span> Zoek een speler die past bij de <strong>rij én kolom</strong>.</p>
+            <p><span>✓</span> Goed antwoord? Het vak wordt jouw kleur.</p>
+            <p><span>↻</span> Fout? Dan is de beurt voor je tegenstander.</p>
+          </div>
+        </section>
+
+        <section class="fm-panel fm-mode-panel">
+          <h2>SPEEL 3×3 OF 5×5</h2>
+          <div class="fm-mode-buttons">
+            <button class="active" type="button">3 × 3</button>
+            <button type="button" disabled>5 × 5</button>
+          </div>
+        </section>
+
+        <section class="fm-panel fm-stats-panel">
+          <h2>JOUW STATISTIEKEN</h2>
+          <div><span>🏆 Gewonnen</span><b>—</b></div>
+          <div><span>★ Beste reeks</span><b>—</b></div>
+          <div><span>◎ Nauwkeurigheid</span><b>—</b></div>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script src="database.js?v=5"></script>
+  <script src="script.js?v=6"></script>
+  <script src="solo.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "sport": "football",
+  "scope": "mannenvoetbal",
+  "answerType": "player",
+  "players": [
+    {"id":"P001","name":"Johan Cruijff","aliases":["Cruijff","Johan Cruyff"],"clubs":["Ajax","FC Barcelona","Los Angeles Aztecs","Washington Diplomats","Levante","Feyenoord"],"internationalTeams":["Nederland"],"awards":["Ballon d'Or","Europees Voetballer van het Jaar"],"competitions":["Eredivisie","La Liga","WK"]},
+    {"id":"P002","name":"Marco van Basten","aliases":["Van Basten","Marco van Basten"],"clubs":["Ajax","AC Milan"],"internationalTeams":["Nederland"],"awards":["Ballon d'Or","Europees Voetballer van het Jaar"],"competitions":["Eredivisie","Serie A","EK"]},
+    {"id":"P003","name":"Ruud Gullit","aliases":["Gullit","Ruud Gullit"],"clubs":["HFC Haarlem","Feyenoord","PSV","AC Milan","Sampdoria","Chelsea"],"internationalTeams":["Nederland"],"awards":["Ballon d'Or","Wereldvoetballer van het Jaar"],"competitions":["Eredivisie","Serie A","EK"]},
+    {"id":"P004","name":"Dennis Bergkamp","aliases":["Bergkamp","Dennis Bergkamp"],"clubs":["Ajax","Internazionale","Arsenal"],"internationalTeams":["Nederland"],"awards":["Europees Voetballer van het Jaar"],"competitions":["Eredivisie","Serie A","Premier League","EK"]},
+    {"id":"P005","name":"Wesley Sneijder","aliases":["Sneijder","Wesley Sneijder"],"clubs":["Ajax","Real Madrid","Internazionale","Galatasaray","OGC Nice","Al-Gharafa"],"internationalTeams":["Nederland"],"awards":[],"competitions":["Eredivisie","La Liga","Serie A","Champions League","WK"]},
+    {"id":"P006","name":"Lionel Messi","aliases":["Messi","Lionel Messi"],"clubs":["FC Barcelona","Paris Saint-Germain","Inter Miami"],"internationalTeams":["Argentinië"],"awards":["Ballon d'Or","Wereldvoetballer van het Jaar"],"competitions":["La Liga","Ligue 1","Champions League","WK","Copa América"]},
+    {"id":"P007","name":"Cristiano Ronaldo","aliases":["Ronaldo","Cristiano Ronaldo","CR7"],"clubs":["Sporting CP","Manchester United","Real Madrid","Juventus","Al-Nassr"],"internationalTeams":["Portugal"],"awards":["Ballon d'Or","Wereldvoetballer van het Jaar"],"competitions":["Premier League","La Liga","Serie A","Champions League","EK"]},
+    {"id":"P008","name":"Luka Modric","aliases":["Modric","Luka Modrić","Modrić"],"clubs":["Dinamo Zagreb","Tottenham Hotspur","Real Madrid"],"internationalTeams":["Kroatië"],"awards":["Ballon d'Or","Wereldvoetballer van het Jaar"],"competitions":["Premier League","La Liga","Champions League","WK"]},
+    {"id":"P009","name":"Zinedine Zidane","aliases":["Zidane","Zinedine Zidane"],"clubs":["AS Cannes","Girondins de Bordeaux","Juventus","Real Madrid"],"internationalTeams":["Frankrijk"],"awards":["Ballon d'Or","Wereldvoetballer van het Jaar"],"competitions":["Serie A","La Liga","Champions League","WK","EK"]},
+    {"id":"P010","name":"Ronaldinho","aliases":["Ronaldinho","Ronaldo de Assis Moreira"],"clubs":["Grêmio","Paris Saint-Germain","FC Barcelona","AC Milan","Flamengo","Atlético Mineiro"],"internationalTeams":["Brazilië"],"awards":["Ballon d'Or","Wereldvoetballer van het Jaar"],"competitions":["Ligue 1","La Liga","Serie A","Champions League","WK"]},
+    {"id":"P011","name":"Mohamed Salah","aliases":["Salah","Mohamed Salah"],"clubs":["Al Mokawloon","FC Basel","Chelsea","Fiorentina","AS Roma","Liverpool"],"internationalTeams":["Egypte"],"awards":["Afrikaans Voetballer van het Jaar"],"competitions":["Premier League","Serie A","Champions League","Africa Cup of Nations"]},
+    {"id":"P012","name":"Robert Lewandowski","aliases":["Lewandowski","Robert Lewandowski"],"clubs":["Znicz Pruszków","Lech Poznań","Borussia Dortmund","Bayern München","FC Barcelona"],"internationalTeams":["Polen"],"awards":["Wereldvoetballer van het Jaar"],"competitions":["Bundesliga","La Liga","Champions League","EK"]}
+  ],
+  "categories": {
+    "club": "Club",
+    "internationalTeam": "International van land",
+    "award": "Award",
+    "competition": "Competitie of toernooi"
+  }
+}

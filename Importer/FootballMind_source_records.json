@@ -1,0 +1,342 @@
+{
+  "players": [
+    {
+      "id": "P001",
+      "name": "Johan Cruijff",
+      "aliases": [
+        "Cruijff",
+        "Johan Cruyff"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [
+        "PEN/Faulkner Award",
+        "Prins van Asturië-literatuurprijs",
+        "Prix Médicis étranger",
+        "Commandeur in de Orde van Kunst en Letteren",
+        "Lucien Barrière Literary Award",
+        "eredoctoraat van de Universiteit Luik",
+        "Lid van de American Academy of Arts and Sciences",
+        "honorary doctorate of the University of Copenhagen",
+        "San Clemente Rosalía-Abanca-prijs voor buitenlandse romans",
+        "Q137761811"
+      ],
+      "competitions": [
+        "Eredivisie",
+        "La Liga",
+        "WK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q214642"
+    },
+    {
+      "id": "P002",
+      "name": "Marco van Basten",
+      "aliases": [
+        "Van Basten",
+        "Marco van Basten"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [
+        "'Verschlossene Auster' award"
+      ],
+      "competitions": [
+        "Eredivisie",
+        "Serie A",
+        "EK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q152815"
+    },
+    {
+      "id": "P003",
+      "name": "Ruud Gullit",
+      "aliases": [
+        "Gullit",
+        "Ruud Gullit"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [],
+      "competitions": [
+        "Eredivisie",
+        "Serie A",
+        "EK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q154934"
+    },
+    {
+      "id": "P004",
+      "name": "Dennis Bergkamp",
+      "aliases": [
+        "Bergkamp",
+        "Dennis Bergkamp"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [],
+      "competitions": [
+        "Eredivisie",
+        "Serie A",
+        "Premier League",
+        "EK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q190601"
+    },
+    {
+      "id": "P005",
+      "name": "Wesley Sneijder",
+      "aliases": [
+        "Sneijder",
+        "Wesley Sneijder"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [],
+      "competitions": [
+        "Eredivisie",
+        "La Liga",
+        "Serie A",
+        "Champions League",
+        "WK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q45977"
+    },
+    {
+      "id": "P006",
+      "name": "Lionel Messi",
+      "aliases": [
+        "Messi",
+        "Lionel Messi"
+      ],
+      "clubs": [
+        "Inter Miami CF"
+      ],
+      "nationalTeams": [
+        "Argentinië"
+      ],
+      "awards": [
+        "Presidential Medal of Freedom",
+        "Ballon d’Or",
+        "Wereldvoetballer van het jaar",
+        "Europees topschutter van het seizoen",
+        "UEFA Best Player in Europe",
+        "UEFA Club Football Awards",
+        "Europees voetballer van het jaar u21",
+        "Argentijns voetballer van het jaar",
+        "Trofeo Pichichi",
+        "Onze d'Or",
+        "L'Équipe Champion of Champions",
+        "FIFPro",
+        "Creu de Sant Jordi",
+        "UEFA Team of the Year",
+        "UEFA Club Footballer of the Year",
+        "Premio Don Balón",
+        "Olimpia Award",
+        "Golden Boy",
+        "Laureus World Sports Award voor Sportman van het Jaar",
+        "Trofeo Alfredo Di Stéfano",
+        "Globe Soccer Awards",
+        "FIFA Ballon d'Or",
+        "LFP Trofee",
+        "Trofeo EFE",
+        "IFFHS World's Best Playmaker",
+        "Princess of Asturias Award for Sports",
+        "FIFA FIFPro World XI",
+        "World Soccer Award",
+        "FIFA U-20 World Cup awards",
+        "Marca Leyenda",
+        "Best International Athlete ESPY Award",
+        "Trofeo Gol Televisión",
+        "Q6084897",
+        "Premios Protagonistas",
+        "Mastercard All-Star Team",
+        "La Liga Player of the Month",
+        "World Cup Golden Ball",
+        "The Best FIFA Men's Player",
+        "Trofeo Aldo Rovira",
+        "The Guardian 100 Best Footballers in the World",
+        "IFFHS World's Best Top Goal Scorer",
+        "El País King of European Soccer",
+        "Diamanten Konex-prijs",
+        "Premi Barça Jugadors",
+        "Ballon d'Or Dream Team",
+        "IFFHS World's Best International Goal Scorer",
+        "IFFHS World's Best Top Division Goal Scorer",
+        "IFFHS World's Best Player",
+        "IFFHS World Team"
+      ],
+      "competitions": [
+        "La Liga",
+        "Ligue 1",
+        "Champions League",
+        "WK",
+        "Copa América"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q615"
+    },
+    {
+      "id": "P007",
+      "name": "Cristiano Ronaldo",
+      "aliases": [
+        "Ronaldo",
+        "Cristiano Ronaldo",
+        "CR7"
+      ],
+      "clubs": [
+        "Al-Nassr"
+      ],
+      "nationalTeams": [
+        "Portugal"
+      ],
+      "awards": [
+        "Ballon d’Or",
+        "Wereldvoetballer van het jaar",
+        "Europees topschutter van het seizoen",
+        "UEFA Best Player in Europe",
+        "Europees voetballer van het jaar u21",
+        "FIFA Ferenc Puskás Award",
+        "PFA Players' Player of the Year",
+        "Trofeo Pichichi",
+        "Premier League Golden Boot",
+        "Premier League Player of the Month",
+        "Onze d'Or",
+        "UEFA Team of the Year",
+        "UEFA Club Footballer of the Year",
+        "Premier League Player of the Season",
+        "FWA Footballer of the Year",
+        "Trofeo Alfredo Di Stéfano",
+        "PFA Young Player of the Year",
+        "PFA Team of the Year",
+        "FIFA Ballon d'Or",
+        "Sir Matt Busby Player of the Year",
+        "Best International Athlete ESPY Award",
+        "Prémio Arco-íris",
+        "Footballer of the Year in England",
+        "La Liga Player of the Month",
+        "Grand Officer of the Order of Prince Henry",
+        "Oficial da Ordem do Infante Dom Henrique",
+        "Commander of the Order of Merit of Portugal",
+        "Medal of Merit of the Order of the Immaculate Conception of Vila Viçosa"
+      ],
+      "competitions": [
+        "Premier League",
+        "La Liga",
+        "Serie A",
+        "Champions League",
+        "EK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q11571"
+    },
+    {
+      "id": "P008",
+      "name": "Luka Modric",
+      "aliases": [
+        "Modric",
+        "Luka Modrić",
+        "Modrić"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [
+        "MTV Europe Music Award for Best Finnish Act",
+        "Muuvi Prize",
+        "Echo Pop",
+        "Finnish Music Hall of Fame",
+        "Emma Award for Band of the Year"
+      ],
+      "competitions": [
+        "Premier League",
+        "La Liga",
+        "Champions League",
+        "WK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q43510"
+    },
+    {
+      "id": "P009",
+      "name": "Zinedine Zidane",
+      "aliases": [
+        "Zidane",
+        "Zinedine Zidane"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [],
+      "competitions": [
+        "Serie A",
+        "La Liga",
+        "Champions League",
+        "WK",
+        "EK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q18772"
+    },
+    {
+      "id": "P010",
+      "name": "Ronaldinho",
+      "aliases": [
+        "Ronaldinho",
+        "Ronaldo de Assis Moreira"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [],
+      "competitions": [
+        "Ligue 1",
+        "La Liga",
+        "Serie A",
+        "Champions League",
+        "WK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q11643"
+    },
+    {
+      "id": "P011",
+      "name": "Mohamed Salah",
+      "aliases": [
+        "Salah",
+        "Mohamed Salah"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [],
+      "competitions": [
+        "Premier League",
+        "Serie A",
+        "Champions League",
+        "Africa Cup of Nations"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q162826"
+    },
+    {
+      "id": "P012",
+      "name": "Robert Lewandowski",
+      "aliases": [
+        "Lewandowski",
+        "Robert Lewandowski"
+      ],
+      "clubs": [],
+      "nationalTeams": [],
+      "awards": [],
+      "competitions": [
+        "Bundesliga",
+        "La Liga",
+        "Champions League",
+        "EK"
+      ],
+      "source": "Wikidata",
+      "sourceEntity": "Q15187"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FootballMind Importer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="studio">
+    <header><div><span>FOOTBALLMIND STUDIO</span><h1>Database importer</h1></div><strong id="count">0 spelers</strong></header>
+    <section class="cards">
+      <article><h2>Actieve database</h2><p>De database uit de map <code>data</code> wordt automatisch geladen.</p><strong id="databaseStatus">Database laden...</strong></article>
+      <article><h2>Nieuwe spelers</h2><p>Nieuwe spelers worden rechtstreeks uit API-Football opgehaald. Een apart bronbestand is niet nodig.</p><strong>API-bron actief</strong></article>
+    </section>
+    <section class="panel">
+      <h2>💾 Database koppelen & automatisch opslaan</h2>
+      <p>Kies één keer je echte <code>data/FootballMind_database.json</code>. Daarna worden handmatig toegevoegde spelers en legends direct in dat bestand opgeslagen.</p>
+      <button id="connectDatabase">FOOTBALLMIND_DATABASE.JSON KOPPELEN</button>
+      <strong id="saveStatus" style="margin-left:12px;">Nog niet gekoppeld</strong>
+    </section>
+    <section class="actions"><button id="seedImport">STARTDATABASE INLADEN</button><button id="merge">IMPORTEREN EN SAMENVOEGEN</button><button id="validate">CONTROLEER SPEELBAARHEID</button><button id="download" class="secondary">DOWNLOAD DATABASE</button></section>
+    <section class="panel"><h2>Spelers ophalen per club en seizoen</h2><p>De sleutel wordt alleen op deze computer onthouden. Vul een API-Football team-ID in, bijvoorbeeld Ajax <strong>194</strong>, en een seizoen. Zo bouwen we de clubhistorie betrouwbaar op. Het gratis plan levert maximaal drie pagina's per import.</p><div class="form-grid api-grid"><input id="apiKey" type="password" placeholder="API-key (lokaal)" autocomplete="off"><input id="teamId" type="number" placeholder="Team-ID, bijvoorbeeld 194"><input id="season" type="number" placeholder="Seizoen, bijvoorbeeld 2024"></div><button id="fetchApi">CLUBSPELERS OPHALEN</button><button id="clearApiKey" class="secondary">API-KEY VERGETEN</button></section>
+    <section class="panel"><h2>Speler toevoegen of aanpassen</h2><p>Gebruik komma's tussen meerdere clubs, landen, awards of competities. Klik bij een zoekresultaat op <strong>BEWERK</strong> om bestaande gegevens aan te vullen.</p><div class="form-grid"><input id="newName" placeholder="Naam speler"><input id="newClubs" placeholder="Clubs, bijvoorbeeld Ajax, Barcelona"><input id="newInternationals" placeholder="International van land"><input id="newAwards" placeholder="Awards"><input id="newCompetitions" placeholder="Competities"></div><button id="addPlayer">SPELER TOEVOEGEN</button><button id="cancelEdit" class="secondary" hidden>BEWERKEN ANNULEREN</button></section>
+    <section class="panel">
+      <h2>⭐ Legends aanvullen</h2>
+      <p>Voeg een bekende oud-speler toe of vul een bestaande speler aan. Bestaat de naam al, dan worden clubs, land en aliassen samengevoegd in plaats van een dubbele speler te maken.</p>
+      <div class="form-grid">
+        <input id="legendName" placeholder="Naam legend, bijvoorbeeld Lothar Matthäus">
+        <input id="legendAliases" placeholder="Aliassen, bijvoorbeeld Lothar Matthaus">
+        <input id="legendClubs" placeholder="Clubs, bijvoorbeeld Bayern München, Inter">
+        <input id="legendInternationals" placeholder="International van land, bijvoorbeeld Duitsland">
+      </div>
+      <button id="addLegend">LEGEND TOEVOEGEN / AANVULLEN</button>
+    </section>
+    <section class="panel"><h2>Importlog</h2><pre id="log">Laad eerst een databasebestand.</pre></section>
+    <section class="panel"><h2>Zoeken in actieve database</h2><input id="search" placeholder="Zoek speler, club of land..."><div id="results"></div><div id="resultsPager" class="results-pager"></div></section>
+  </main>
+  <script src="../game/database.js?v=5"></script>
+  <script src="script.js?v=5"></script>
+</body>
+</html>

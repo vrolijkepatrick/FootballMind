@@ -1,0 +1,856 @@
+/* FOOTBALLMIND — MOCKUP REBUILD */
+:root{
+  --bg:#070706;
+  --panel:#160f0b;
+  --panel2:#21120d;
+  --wine:#4a1119;
+  --wine2:#6b1722;
+  --gold:#d6a33e;
+  --gold2:#f0cf7b;
+  --cream:#f5ead2;
+  --muted:#a99d86;
+  --pitch:#123a18;
+  --pitch2:#1f5927;
+  --line:rgba(226,174,65,.72);
+  --shadow:0 18px 45px rgba(0,0,0,.48);
+}
+
+*{box-sizing:border-box}
+html,body{min-height:100%;margin:0}
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  color:var(--cream);
+  background:
+    linear-gradient(rgba(4,4,3,.42),rgba(4,4,3,.72)),
+    radial-gradient(circle at 50% 8%,rgba(99,17,25,.30),transparent 34%),
+    url("../images/stadium-bg.png") center/cover fixed,
+    #060605;
+}
+
+body::after{
+  content:"";
+  position:fixed; inset:0; pointer-events:none;
+  background:
+    linear-gradient(to bottom,rgba(0,0,0,.02),rgba(0,0,0,.24) 60%,rgba(0,0,0,.64)),
+    radial-gradient(circle at 15% 16%,rgba(255,235,177,.10),transparent 10%),
+    radial-gradient(circle at 85% 16%,rgba(255,235,177,.10),transparent 10%);
+}
+
+button,select{font:inherit}
+button{cursor:pointer}
+.fm-page{
+  position:relative; z-index:1;
+  width:min(1320px,calc(100vw - 90px));
+  margin:0 auto;
+  padding:24px 0 38px;
+}
+
+.fm-header{
+  position:relative;
+  min-height:175px;
+  display:grid;
+  grid-template-columns:220px 1fr 220px;
+  align-items:start;
+  gap:18px;
+}
+
+.fm-level-card,.fm-settings,.fm-panel{
+  background:linear-gradient(180deg,rgba(33,15,11,.96),rgba(14,10,8,.97));
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  border-radius:12px;
+}
+
+.fm-level-card{padding:14px 16px;margin-top:20px}
+.fm-mini-title{font-size:12px;letter-spacing:.16em;color:var(--gold2);font-weight:800}
+.fm-level-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px}
+.fm-level-row strong{font-size:20px;color:#fff0cf}
+#difficulty{
+  max-width:104px;
+  color:var(--gold2);
+  background:#170f0c;
+  border:1px solid rgba(214,163,62,.55);
+  border-radius:7px;
+  padding:7px 8px;
+}
+
+.fm-brand{text-align:center;padding-top:3px}
+.fm-brand-mark{color:var(--gold);letter-spacing:.5em;font-size:18px;margin-bottom:4px}
+.fm-brand h1{
+  margin:0;
+  font-family:Impact,"Arial Narrow",sans-serif;
+  font-size:clamp(52px,5vw,82px);
+  line-height:.95;
+  letter-spacing:.035em;
+  color:#d6a23c;
+  text-shadow:0 2px 0 #6d4511,0 7px 20px rgba(0,0,0,.78);
+}
+.fm-slogan{
+  margin-top:13px;
+  display:flex;align-items:center;justify-content:center;gap:13px;
+  font-size:13px;font-weight:800;letter-spacing:.15em;color:#eee3cf;
+}
+.fm-slogan span{width:88px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.fm-slogan span:last-child{background:linear-gradient(90deg,var(--gold),transparent)}
+
+.fm-settings{
+  margin-top:20px;
+  padding:15px 16px;
+  color:var(--gold2);
+  font-weight:800;
+  letter-spacing:.05em;
+}
+
+.fm-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 245px;
+  gap:16px;
+  align-items:start;
+}
+
+.fm-pitch-shell{
+  position:relative;
+  padding:8px;
+  border:1px solid rgba(212,160,58,.44);
+  background:
+    linear-gradient(rgba(7,22,10,.62),rgba(7,18,9,.78)),
+    radial-gradient(circle at 50% 50%,rgba(52,106,51,.20),transparent 55%);
+  box-shadow:0 20px 55px rgba(0,0,0,.50);
+  overflow:hidden;
+}
+.fm-pitch-shell::before{
+  content:"";position:absolute;inset:10px;pointer-events:none;opacity:.24;
+  border:1px solid rgba(255,255,255,.26);
+  background:
+    linear-gradient(90deg,transparent 49.8%,rgba(255,255,255,.32) 50%,transparent 50.2%),
+    radial-gradient(circle at 50% 50%,transparent 0 10%,rgba(255,255,255,.28) 10.2% 10.6%,transparent 10.8%);
+}
+
+.board{
+  position:relative; z-index:1;
+  display:grid;
+  grid-template-columns:145px repeat(3,minmax(0,1fr));
+  grid-template-rows:108px repeat(3,142px);
+  gap:6px;
+  width:100%;
+}
+
+.cell{
+  min-width:0;
+  border-radius:9px;
+  border:1px solid rgba(225,173,64,.82);
+  overflow:hidden;
+}
+.corner{
+  border-color:transparent;
+  background:transparent;
+  display:grid;place-items:center;
+}
+.fm-corner-ball{font-size:38px;filter:drop-shadow(0 8px 10px rgba(0,0,0,.5))}
+.clue{
+  background:linear-gradient(180deg,rgba(67,18,19,.97),rgba(28,12,10,.98));
+  color:#f5dfaf;
+  display:grid;place-items:center;
+  box-shadow:inset 0 0 24px rgba(0,0,0,.22),0 8px 18px rgba(0,0,0,.20);
+}
+.fm-clue-card{
+  width:100%;height:100%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:8px;padding:10px;text-align:center;
+}
+.fm-clue-icon{font-size:48px;line-height:1;filter:drop-shadow(0 6px 8px rgba(0,0,0,.42))}
+.fm-clue-award .fm-clue-icon{font-size:44px}
+.fm-clue-label{
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:12px;font-weight:900;line-height:1.1;
+  letter-spacing:.035em;text-transform:uppercase;color:#f2dcae;
+}
+
+.answer{
+  appearance:none;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:7px;
+  background:
+    linear-gradient(rgba(18,72,27,.78),rgba(8,48,17,.87)),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.018) 0 2px,transparent 2px 86px);
+  color:#e9cd83;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:13px;font-weight:800;
+  box-shadow:inset 0 0 30px rgba(0,0,0,.22);
+  transition:.16s ease;
+}
+.answer:hover{
+  transform:translateY(-2px);
+  border-color:#f0c76e;
+  box-shadow:inset 0 0 28px rgba(0,0,0,.16),0 10px 22px rgba(0,0,0,.30);
+}
+.answer .fm-empty-plus{font-size:20px;color:#f0d28b}
+.answer.correct{
+  background:linear-gradient(180deg,rgba(76,18,26,.94),rgba(32,13,13,.96));
+}
+.fm-correct-check{
+  width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  background:#d6a33e;color:#170c08;font-family:Arial,sans-serif;font-size:20px;font-weight:900;
+}
+.fm-correct-label{font:800 9px Arial,sans-serif;letter-spacing:.22em;color:#cda551}
+.fm-correct-name{font-size:17px;color:#fff0c1;text-align:center;padding:0 8px}
+
+.fm-sidebar{display:flex;flex-direction:column;gap:14px}
+.fm-panel{overflow:hidden}
+.fm-panel h2{
+  margin:0;padding:12px 14px 10px;
+  color:var(--gold);text-align:center;font-size:13px;letter-spacing:.12em;
+  border-bottom:1px solid rgba(214,163,62,.26);
+}
+.fm-turn-panel{padding-bottom:10px}
+.fm-player{
+  margin:10px 11px 0;padding:10px;
+  display:grid;grid-template-columns:38px 1fr auto;gap:9px;align-items:center;
+  border-radius:8px;
+}
+.fm-player.active{background:linear-gradient(90deg,rgba(94,18,29,.70),rgba(50,13,19,.10))}
+.fm-player-avatar{width:36px;height:36px;border-radius:50%;border:1px solid rgba(214,163,62,.7)}
+.fm-player-avatar.p1{background:#5a1722}
+.fm-player-avatar.p2{background:#d1a038}
+.fm-player div{display:flex;align-items:baseline;gap:5px}
+.fm-player strong{font-size:14px}.fm-player small{font-size:12px;color:#d2c09d}
+.fm-player b{font-size:26px;color:#f1d27f}
+.fm-one-answer{text-align:center;color:#9d907c;font:700 10px Arial,sans-serif;letter-spacing:.08em;margin:11px 0 2px}
+
+.fm-howto{padding:12px 15px 14px}
+.fm-howto p{display:grid;grid-template-columns:24px 1fr;gap:7px;margin:10px 0;color:#ddd0bb;font-size:13px;line-height:1.35}
+.fm-howto span{color:var(--gold2);font-size:18px}
+.fm-howto strong{color:#f1d696}
+.fm-mode-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px}
+.fm-mode-buttons button{
+  border:1px solid rgba(214,163,62,.46);border-radius:7px;padding:12px;
+  background:#17120f;color:#e8d5ae;font-weight:800;
+}
+.fm-mode-buttons .active{background:linear-gradient(180deg,#681928,#4a101a);color:#fff0cf}
+.fm-stats-panel div{
+  display:flex;justify-content:space-between;padding:12px 14px;
+  border-top:1px solid rgba(255,255,255,.07);color:#d9c9ad;font-size:13px;
+}
+.fm-stats-panel b{color:#f0d27c}
+
+.fm-status-row{
+  min-height:26px;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:7px 4px 0;color:#9f927c;font:12px Arial,sans-serif;
+}
+#message{color:#e8c56a;font-weight:700}
+.fm-hidden-counter{display:none}
+
+.fm-bottom-nav{
+  display:grid;grid-template-columns:1.15fr 1.15fr .8fr .8fr;gap:8px;margin-top:10px;
+}
+.fm-nav-btn{
+  border:1px solid rgba(214,163,62,.44);border-radius:8px;padding:13px 12px;
+  background:linear-gradient(180deg,rgba(28,20,16,.98),rgba(12,10,8,.98));
+  color:#e4c477;font-weight:900;letter-spacing:.035em;
+}
+.fm-nav-btn.primary{background:linear-gradient(180deg,#5e1721,#3f1017);color:#f3d98d}
+.fm-nav-btn.muted{opacity:.42;cursor:default}
+
+@media(max-width:1180px){
+  .fm-page{width:min(1080px,calc(100vw - 20px))}
+  .fm-header{grid-template-columns:210px 1fr 210px}
+  .fm-layout{grid-template-columns:minmax(0,1fr) 230px}
+  .board{grid-template-columns:145px repeat(3,minmax(0,1fr));grid-template-rows:115px repeat(3,150px)}
+  .fm-brand h1{font-size:58px}
+}
+@media(max-width:900px){
+  .fm-header{grid-template-columns:1fr 1fr;min-height:auto}
+  .fm-brand{grid-column:1 / -1;grid-row:1}.fm-level-card{grid-row:2}.fm-settings{grid-row:2}
+  .fm-layout{grid-template-columns:1fr}
+  .fm-sidebar{display:grid;grid-template-columns:repeat(2,1fr)}
+}
+
+
+/* V2 compact framing: laat het stadion bewust rondom het spel zichtbaar */
+body{
+  background-position:center top;
+  background-size:cover;
+  background-attachment:fixed;
+}
+.fm-page{
+  min-height:100vh;
+}
+.fm-layout{
+  margin-top:2px;
+}
+.fm-pitch-shell{
+  border-radius:10px;
+}
+@media (min-width:1400px){
+  .fm-page{
+    width:min(1280px,calc(100vw - 150px));
+  }
+}
+
+
+/* =========================================================
+   FOOTBALLMIND — ONE SCREEN DESKTOP FIT
+   Definitieve mock-up verhoudingen
+   ========================================================= */
+@media (min-width: 1100px) {
+  body{
+    overflow-x:hidden;
+  }
+
+  .fm-page{
+    width:min(1360px, calc(100vw - 70px));
+    padding:14px 0 22px;
+  }
+
+  .fm-header{
+    min-height:148px;
+    grid-template-columns:190px minmax(0,1fr) 190px;
+    gap:16px;
+  }
+
+  .fm-level-card,
+  .fm-settings{
+    margin-top:10px;
+  }
+
+  .fm-level-card{
+    padding:10px 13px;
+  }
+
+  .fm-level-row strong{
+    font-size:17px;
+  }
+
+  .fm-brand{
+    padding-top:0;
+  }
+
+  .fm-brand-mark{
+    font-size:14px;
+    margin-bottom:1px;
+  }
+
+  .fm-brand h1{
+    font-size:clamp(50px,4.8vw,76px);
+  }
+
+  .fm-slogan{
+    margin-top:8px;
+    font-size:11px;
+  }
+
+  .fm-layout{
+    grid-template-columns:minmax(0,1fr) 235px;
+    gap:15px;
+  }
+
+  .fm-pitch-shell{
+    padding:7px;
+  }
+
+  .board{
+    grid-template-columns:130px repeat(3,minmax(0,1fr));
+    grid-template-rows:90px repeat(3,126px);
+    gap:5px;
+  }
+
+  .cell{
+    border-radius:7px;
+  }
+
+  .fm-clue-card{
+    gap:5px;
+    padding:6px;
+  }
+
+  .fm-clue-icon{
+    font-size:31px;
+  }
+
+  .fm-clue-award .fm-clue-icon{
+    font-size:29px;
+  }
+
+  .fm-clue-label{
+    font-size:11px;
+  }
+
+  .answer{
+    font-size:12px;
+  }
+
+  .fm-correct-name{
+    font-size:14px;
+  }
+
+  .fm-sidebar{
+    gap:9px;
+  }
+
+  .fm-panel h2{
+    padding:8px 10px 7px;
+    font-size:11px;
+  }
+
+  .fm-player{
+    margin:6px 8px 0;
+    padding:7px;
+    grid-template-columns:30px 1fr auto;
+  }
+
+  .fm-player-avatar{
+    width:29px;
+    height:29px;
+  }
+
+  .fm-player strong{
+    font-size:12px;
+  }
+
+  .fm-player b{
+    font-size:20px;
+  }
+
+  .fm-one-answer{
+    margin:7px 0 1px;
+    font-size:8px;
+  }
+
+  .fm-howto{
+    padding:7px 10px 9px;
+  }
+
+  .fm-howto p{
+    margin:6px 0;
+    font-size:11px;
+    line-height:1.25;
+  }
+
+  .fm-howto span{
+    font-size:14px;
+  }
+
+  .fm-mode-buttons{
+    padding:7px;
+  }
+
+  .fm-mode-buttons button{
+    padding:8px;
+  }
+
+  .fm-stats-panel div{
+    padding:7px 10px;
+    font-size:11px;
+  }
+
+  .fm-status-row{
+    min-height:20px;
+    padding-top:4px;
+    font-size:10px;
+  }
+
+  .fm-bottom-nav{
+    margin-top:6px;
+    gap:7px;
+  }
+
+  .fm-nav-btn{
+    padding:10px 8px;
+    font-size:11px;
+  }
+}
+
+/* Op lagere laptops nog een tikje compacter, zonder browserzoom nodig te hebben. */
+@media (min-width:1100px) and (max-height:850px){
+  .fm-page{
+    padding-top:8px;
+  }
+
+  .fm-header{
+    min-height:124px;
+  }
+
+  .fm-brand h1{
+    font-size:56px;
+  }
+
+  .board{
+    grid-template-columns:118px repeat(3,minmax(0,1fr));
+    grid-template-rows:78px repeat(3,108px);
+  }
+
+  .fm-clue-icon{
+    font-size:27px;
+  }
+
+  .fm-sidebar{
+    gap:7px;
+  }
+
+  .fm-bottom-nav{
+    margin-top:4px;
+  }
+}
+
+
+/* =========================================================
+   FOOTBALLMIND — POSITION TWEAKS
+   ========================================================= */
+@media (min-width:1100px){
+  .fm-level-card{
+    margin-left:42px;
+  }
+
+  .fm-sidebar{
+    margin-top:-24px;
+    gap:7px;
+  }
+
+  .fm-sidebar .fm-panel h2{
+    padding-top:7px;
+    padding-bottom:6px;
+  }
+
+  .fm-sidebar .fm-howto{
+    padding-top:6px;
+    padding-bottom:7px;
+  }
+
+  .fm-sidebar .fm-howto p{
+    margin:5px 0;
+  }
+
+  .fm-sidebar .fm-stats-panel div{
+    padding-top:6px;
+    padding-bottom:6px;
+  }
+}
+/* =========================================================
+   FOOTBALLMIND — BEURTBALK / SIDEBAR LAYOUT FIX
+   Plaats dit HELEMAAL ONDERAAN je bestaande style.css
+   ========================================================= */
+
+#fmTopTurnBanner {
+    position: absolute !important;
+    top: 138px !important;
+    left: 50% !important;
+    z-index: 40 !important;
+    width: min(610px, 48vw) !important;
+    min-height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 10px 22px !important;
+    margin: 0 !important;
+    transform: translateX(-50%) !important;
+    border: 1px solid rgba(221, 169, 54, .95) !important;
+    border-radius: 13px !important;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(124, 76, 22, .18), transparent 55%),
+        linear-gradient(180deg, rgba(22, 19, 14, .98), rgba(8, 9, 8, .98)) !important;
+    box-shadow:
+        0 9px 22px rgba(0, 0, 0, .52),
+        0 0 14px rgba(213, 164, 53, .16),
+        inset 0 0 18px rgba(234, 190, 77, .035) !important;
+    color: #f7dda0 !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 19px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+    letter-spacing: .035em !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    pointer-events: none !important;
+}
+
+#board {
+    margin-top: 72px !important;
+}
+
+.board-wrap,
+.board-shell,
+.game-board-wrap,
+.game-board-shell {
+    overflow: visible !important;
+}
+
+#fmTurnRoster {
+    padding: 7px 10px 10px !important;
+}
+
+.fm-turn-roster-row {
+    display: grid !important;
+    grid-template-columns: 42px minmax(0, 1fr) 30px !important;
+    align-items: center !important;
+    min-height: 48px !important;
+    gap: 10px !important;
+    margin: 3px 0 !important;
+    padding: 5px 8px !important;
+    border: 1px solid transparent !important;
+    border-radius: 10px !important;
+    background: transparent !important;
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        box-shadow .2s ease,
+        opacity .2s ease !important;
+}
+
+.fm-turn-roster-row.active {
+    opacity: 1 !important;
+    border-color: rgba(211, 157, 43, .92) !important;
+    background:
+        linear-gradient(90deg, rgba(111, 23, 39, .95), rgba(73, 19, 28, .65)) !important;
+    box-shadow:
+        inset 3px 0 0 #d7a93f,
+        0 0 12px rgba(191, 136, 35, .10) !important;
+}
+
+.fm-turn-roster-row:not(.active) {
+    opacity: .82 !important;
+}
+
+.fm-turn-roster-pawn {
+    width: 38px !important;
+    height: 38px !important;
+    display: grid !important;
+    place-items: center !important;
+    border: 1px solid rgba(220, 170, 64, .95) !important;
+    border-radius: 50% !important;
+    background:
+        radial-gradient(circle at 35% 25%, #9c3448, #611828 70%) !important;
+    box-shadow:
+        0 4px 11px rgba(0, 0, 0, .38),
+        inset 0 0 8px rgba(255, 224, 153, .06) !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+}
+
+.fm-turn-roster-row.player-2 .fm-turn-roster-pawn {
+    background:
+        radial-gradient(circle at 35% 25%, #e4b64a, #9a6714 72%) !important;
+    color: #21150b !important;
+}
+
+.fm-turn-roster-name {
+    min-width: 0 !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    color: #f3dfac !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 16px !important;
+    font-weight: 900 !important;
+    letter-spacing: .025em !important;
+    text-transform: uppercase !important;
+}
+
+.fm-turn-roster-score {
+    min-width: 26px !important;
+    color: #ffe5a2 !important;
+    font-size: 18px !important;
+    font-weight: 900 !important;
+    text-align: right !important;
+}
+
+#fmTurnRosterStatus,
+.fm-turn-label,
+#fmCurrentTurn {
+    display: none !important;
+}
+
+@media (min-width: 1450px) {
+    #fmTopTurnBanner {
+        top: 142px !important;
+        width: min(620px, 44vw) !important;
+        font-size: 20px !important;
+    }
+
+    #board {
+        margin-top: 76px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    #fmTopTurnBanner {
+        top: 126px !important;
+        width: min(540px, 52vw) !important;
+        min-height: 48px !important;
+        font-size: 16px !important;
+    }
+
+    #board {
+        margin-top: 64px !important;
+    }
+}
+
+@media (max-width: 850px) {
+    #fmTopTurnBanner {
+        display: none !important;
+    }
+
+    #board {
+        margin-top: 0 !important;
+    }
+}
+.fm-sidebar .fm-howto p {
+  display: block;
+  margin: 6px 0;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+}
+
+/* Header and board alignment. */
+.fm-header {display:block;min-height:0;margin-bottom:22px}
+.fm-level-card,.fm-settings {display:none}
+.fm-header .fm-brand {padding-top:0}
+.fm-layout .fm-pitch-shell {padding:7px}
+#fmTopTurnBanner {
+  position:relative !important;
+  top:auto !important;
+  left:auto !important;
+  transform:none !important;
+  width:min(610px,100%) !important;
+  height:54px !important;
+  min-height:54px !important;
+  margin:0 auto 14px !important;
+  font-size:clamp(14px,1.5vw,20px) !important;
+}
+#board {margin-top:0 !important}
+.fm-layout .fm-sidebar {margin-top:0;padding-top:76px}
+.fm-solo-active .fm-layout .fm-sidebar {padding-top:0}
+@media(max-width:980px) {
+  .fm-layout .fm-sidebar {padding-top:0}
+}
+@media(max-width:850px) {
+  #fmTopTurnBanner {display:none !important}
+  .fm-header {margin-bottom:16px}
+}
+
+/* The grid determines the sidebar position and height. */
+@media (min-width: 981px) {
+  body:not(.fm-solo-active) .fm-layout .fm-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--fm-grid-offset, 0px) !important;
+    padding-top: 0 !important;
+    height: var(--fm-grid-height, auto);
+    min-height: 0;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  body:not(.fm-solo-active) .fm-sidebar > .fm-panel {
+    flex-shrink: 0;
+  }
+}
+
+
+@media (min-width:981px) {
+  body:not(.fm-solo-active) .fm-layout .fm-sidebar {
+    margin-top:0 !important;
+    padding-top:0 !important;
+    overflow:visible;
+    scrollbar-width:auto;
+  }
+}
+
+/* Phone and tablet layouts, shared by all three modes. */
+@media (max-width: 980px) {
+  html, body {max-width:100%;overflow-x:hidden}
+  .fm-page {
+    width:100%;
+    padding:16px max(10px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left));
+  }
+  .fm-header {display:block;min-height:0;margin-bottom:18px}
+  .fm-brand h1 {font-size:clamp(34px,9vw,60px);letter-spacing:.02em}
+  .fm-brand-mark {font-size:12px}
+  .fm-slogan {font-size:9px;letter-spacing:.06em;gap:7px}
+  .fm-slogan span {width:28px;flex-shrink:1}
+  .fm-layout {display:flex;flex-direction:column;gap:12px;min-width:0}
+  .fm-layout .fm-sidebar {display:contents !important;padding:0;margin:0;height:auto}
+  .fm-game-column {order:2;width:100%;min-width:0}
+  .fm-sidebar > .fm-panel {order:3;width:100%;min-width:0}
+  .fm-sidebar > .fm-turn-panel,
+  .fm-sidebar > #fmSoloPanel {order:1}
+  .fm-turn-panel {padding-bottom:6px}
+  #fmCurrentTurn {display:none}
+  #fmTurnRoster {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px;padding:6px !important}
+  #fmTurnRoster .fm-turn-roster-row {grid-template-columns:30px minmax(0,1fr) 20px !important;gap:5px !important;margin:0 !important;padding:5px !important;min-height:54px !important}
+  #fmTurnRoster .fm-turn-roster-name {white-space:normal !important;overflow-wrap:anywhere;font-size:13px !important;line-height:1.25}
+  #fmTurnRosterStatus {grid-column:1/-1;text-align:center;font-size:13px}
+  #fmTurnRoster .fm-turn-roster-pawn img {max-width:28px;max-height:28px}
+  #fmTopTurnBanner {display:none !important}
+  #board {margin-top:0 !important}
+  .fm-layout .fm-pitch-shell {padding:5px;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y}
+  body:not(.fm-solo-active):not(.fm-teams-active) #board {
+    min-width:0;
+    grid-template-columns:68px repeat(3,minmax(0,1fr));
+    grid-template-rows:82px repeat(3,minmax(94px,auto));
+    gap:4px;
+  }
+  #board .cell {border-radius:6px}
+  #board .fm-clue-card {padding:4px;gap:5px}
+  #board .fm-clue-logo-box {width:36px !important;height:36px !important}
+  #board .fm-clue-icon {font-size:30px !important}
+  #board .fm-clue-icon img {max-width:36px;max-height:36px}
+  #board .fm-clue-label {font-size:10px !important;line-height:1.15;letter-spacing:0;overflow-wrap:anywhere}
+  #board .answer {font-size:11px;gap:4px;padding:4px;min-height:44px}
+  #board .fm-correct-photo-wrap {width:34px !important;height:34px !important;flex-basis:34px !important}
+  #board .fm-correct-name {font-size:11px !important;line-height:1.2;padding:0;white-space:normal;overflow-wrap:anywhere}
+  #board .fm-correct-label {font-size:8px}
+  #board .answer:hover {transform:none}
+  #board .cell.answer.correct:hover .fm-correct-photo-wrap {transform:none !important}
+  .fm-solo-active #board,
+  .fm-teams-active #board {
+    min-width:660px !important;
+    grid-template-columns:90px repeat(5,minmax(104px,1fr)) !important;
+    grid-template-rows:84px repeat(5,100px) !important;
+    gap:4px !important;
+  }
+  .fm-solo-active .fm-pitch-shell::after,
+  .fm-teams-active .fm-pitch-shell::after {
+    content:'Schuif het bord naar links of rechts';
+    display:block;
+    position:sticky;
+    left:0;
+    padding:10px 2px 4px;
+    color:#e9cd83;
+    font:12px/1.4 Arial,sans-serif;
+  }
+  .fm-bottom-nav {display:grid;grid-template-columns:1fr 1fr;gap:7px}
+  .fm-nav-btn,.fm-mode-buttons button {min-height:44px;padding:10px 8px;font-size:12px;white-space:normal}
+  .fm-status-row {flex-wrap:wrap;gap:6px;font-size:12px}
+  #sourceStatus {max-width:100%;overflow-wrap:anywhere}
+  .fm-solo-active #fmSoloPanel {display:block !important}
+  .fm-solo-metrics {justify-content:space-around}
+  #playerSearchModal {padding:8px !important}
+  #playerSearchModal .fm-player-dialog {
+    width:min(560px,100%) !important;
+    max-height:calc(100dvh - 16px) !important;
+    padding:20px 12px 12px !important;
+  }
+  #playerSearchModal .fm-player-dialog h2 {font-size:25px}
+  #fmPlayerMatchup {font-size:14px;margin-bottom:12px;overflow-wrap:anywhere}
+  #fmPlayerSearchInput {font-size:16px !important;min-height:44px}
+  #fmPlayerResults {max-height:34dvh !important}
+  #playerSearchModal .fm-player-result {min-height:72px;gap:10px;padding:9px 7px;font-size:16px}
+  #playerSearchModal .fm-player-result-photo {width:56px;height:56px;flex-basis:56px}
+  #fmPlayerSearchPages {flex-wrap:wrap}
+  #fmPlayerSearchPages button,#fmPassTurn {min-height:44px}
+  #fmStartScreen {padding:12px !important;height:100dvh;overflow-y:auto;align-items:start}
+  #fmStartScreen .fm-start-shell {width:100%;max-width:650px;margin:12px auto}
+  #fmStartScreen .fm-start-setup {grid-template-columns:1fr !important}
+  #fmStartScreen .fm-start-level {grid-column:auto !important}
+  #fmStartScreen .fm-start-shell h1 {font-size:clamp(32px,9vw,54px)}
+  #fmStartScreen .fm-start-player input {font-size:16px}
+  .fm-solo-mode-picker {gap:7px}
+  .fm-solo-mode-picker button {min-height:44px;padding:10px 12px;font-size:14px}
+  .fm-winner-card {max-width:calc(100vw - 20px);max-height:90dvh;overflow-y:auto}
+  .fm-winner-actions {flex-wrap:wrap}
+  .fm-winner-actions button {min-height:44px}
+  #fmMissedAnswers,#fmDuelStatistics,#fmSoloLeaderboard {max-width:calc(100vw - 16px);max-height:90dvh;padding:16px !important}
+}
+

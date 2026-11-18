@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FootballMind Analyzer</title>
+  <link rel="stylesheet" href="analyzer.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">FOOTBALLMIND • DEVELOPER TOOL</p>
+        <h1>Analyzer v3.5 Oranje</h1>
+        <p class="sub">Identity-safe clubs, Ballon d’Or, topscorers en FootballMind Legacy.</p>
+      </div>
+      <div id="loadBadge" class="badge badge-wait">Database laden…</div>
+    </header>
+
+    <section class="stats" aria-label="Database statistieken">
+      <article><span>Spelers</span><strong id="statPlayers">—</strong></article>
+      <article><span>Speelclubs</span><strong id="statPoolClubs">—</strong></article>
+      <article><span>Competities</span><strong id="statCompetitions">—</strong></article>
+      <article><span>Verdachte waarden</span><strong id="statSuspicious">—</strong></article>
+    </section>
+
+    <nav class="tabs" aria-label="Analyzer onderdelen">
+      <button class="tab active" data-tab="pool">Speelpool</button>
+      <button class="tab" data-tab="combo">Combinaties</button>
+      <button class="tab" data-tab="grid">Grid-analyzer</button>
+      <button class="tab" data-tab="issues">Databaseproblemen</button>
+    </nav>
+
+    <section id="panel-pool" class="panel active">
+      <div class="panel-head">
+        <div>
+          <h2>Officiële speelpool</h2>
+          <p>Alleen deze clubs mogen als clubcategorie op een normaal FootballMind-bord verschijnen.</p>
+        </div>
+        <button id="exportPoolBtn" class="secondary" disabled>Exporteer tellingen</button>
+      </div>
+      <div id="poolGroups" class="country-groups"></div>
+    </section>
+
+    <section id="panel-combo" class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Combinatie-analyzer</h2>
+          <p>Kies twee categorieën en bekijk hoeveel spelers aan beide voorwaarden voldoen.</p>
+        </div>
+      </div>
+      <div class="controls two-col">
+        <label>Categorie A<select id="comboA"></select></label>
+        <label>Categorie B<select id="comboB"></select></label>
+      </div>
+      <div class="actions"><button id="analyzeComboBtn" disabled>Analyseer combinatie</button></div>
+      <div id="comboResult" class="result empty">Kies twee categorieën.</div>
+    </section>
+
+    <section id="panel-grid" class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>3×3 Grid-analyzer</h2>
+          <p>Genereer een bord uit de goedgekeurde speelpool en laat alle negen kruisingen keuren.</p>
+        </div>
+        <div class="actions compact">
+          <select id="gridTargetDifficulty" aria-label="Gewenste moeilijkheid">
+            <option value="easy">Makkelijk</option>
+            <option value="medium" selected>Gemiddeld</option>
+            <option value="hard">Moeilijk</option>
+          </select>
+          <button id="generateGridBtn" disabled>Genereer bord</button>
+        </div>
+      </div>
+      <div id="gridSummary" class="grid-summary empty">Nog geen bord geanalyseerd.</div>
+      <div id="gridBoard" class="grid-board"></div>
+    </section>
+
+    <section id="panel-issues" class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Databaseproblemen</h2>
+          <p>Waarden die niet als normale club- of competitiecategorie op het bord thuishoren.</p>
+        </div>
+      </div>
+      <div id="issuesList" class="issues"></div>
+    </section>
+  </main>
+
+  <script src="analyzer.js"></script>
+</body>
+</html>

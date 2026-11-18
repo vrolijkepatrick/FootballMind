@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="nl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nederlandse Voetballegendes · Studio</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-icon">VL</span><span>NEDERLANDSE<br><b>VOETBALLEGENDES</b></span></a><span class="edition">KAARTENSTUDIO / 01</span><span id="save-status" role="status">Laden…</span></header>
+<main class="workspace">
+<aside class="library"><div class="eyebrow">JE COLLECTIE</div><h1>De legendes.</h1><p>Een carrière. Een verhaal.<br>Een kaart om te bewaren.</p><button id="new-player" class="primary">+ Nieuwe legende</button><label class="search-label">Zoek een speler<input id="search" type="search" placeholder="Naam van de speler"></label><div id="players"></div><div class="library-bottom"><button id="backup">↓ Back-up opslaan</button><button id="restore">↑ Back-up importeren</button><input id="import-file" type="file" accept="application/json,.json" hidden><a href="assets/cruijff-referentie.jpeg" target="_blank">Bekijk het Cruijff-voorbeeld ↗</a><p>Gegevens blijven in deze browser. Bewaar regelmatig een back-up, inclusief je foto’s.</p></div></aside>
+<section class="editor"><div class="eyebrow">WERKPLAATS</div><h2 id="editor-title">Speler bewerken</h2><nav class="tabs" aria-label="Kaart bewerken"><button data-tab="profile" class="active">Profiel</button><button data-tab="career">Carrière</button><button data-tab="photos">Foto’s</button><button data-tab="check">Controle</button></nav><div id="editor-content"></div></section>
+<section class="preview-area"><div class="preview-toolbar"><div><div class="eyebrow">VAST MASTERONTWERP</div><h2>De spelerskaart</h2></div><button id="print">Afdrukken / PDF</button></div><div id="card" class="legend-card"></div><p class="preview-note">Conceptweergave · zwart & goud · gebaseerd op jouw Cruijff-indeling</p></section>
+</main>
+<dialog id="import-dialog"><h2>Import controleren</h2><p id="import-summary"></p><p>Bestaande ingevulde velden blijven behouden. Alleen lege velden worden aangevuld. Nieuwe spelers worden toegevoegd.</p><div class="dialog-actions"><button id="cancel-import">Annuleren</button><button id="confirm-import" class="primary">Importeren</button></div></dialog>
+<div id="toast" role="status" hidden></div><script src="core.js"></script><script src="app.js"></script>
+</body></html>

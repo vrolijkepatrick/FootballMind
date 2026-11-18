@@ -1,0 +1,628 @@
+[
+  {
+    "name": "Johan Cruijff",
+    "id": "LEGACY-CRUIJFF",
+    "recordCount": 1,
+    "clubs": [
+      "Ajax",
+      "Barcelona",
+      "Feyenoord",
+      "Los Angeles Aztecs",
+      "Washington Diplomats",
+      "Levante"
+    ],
+    "internationalTeams": [
+      "Nederland"
+    ],
+    "realMadridNetherlands": false,
+    "passed": 29,
+    "failed": 3,
+    "checks": [
+      {
+        "label": "Johan Cruijff: één canoniek record en één juiste nameLookup-verwijzing",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: zoeken op Cruijff",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: carrièreclub Ajax",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: playerMatchesClue(Ajax) = true",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: cluePlayers en clubPlayers bevatten Ajax",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: carrièreclub Barcelona",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: playerMatchesClue(Barcelona) = true",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: cluePlayers en clubPlayers bevatten Barcelona",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: carrièreclub Feyenoord",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: playerMatchesClue(Feyenoord) = true",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: cluePlayers en clubPlayers bevatten Feyenoord",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: carrièreclub Los Angeles Aztecs",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: playerMatchesClue(Los Angeles Aztecs) = true",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: cluePlayers en clubPlayers bevatten Los Angeles Aztecs",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: carrièreclub Washington Diplomats",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: playerMatchesClue(Washington Diplomats) = true",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: cluePlayers en clubPlayers bevatten Washington Diplomats",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: carrièreclub Levante",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: playerMatchesClue(Levante) = true",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: cluePlayers en clubPlayers bevatten Levante",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: Nederland: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: Netherlands: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: Holland: sleutel nederland, nationaal team, match en index",
+        "ok": false
+      },
+      {
+        "label": "Johan Cruijff: Real Madrid: sleutel real madrid",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: Real Madrid: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: Real Madrid CF: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Johan Cruijff: Real Madrid CF: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: Real Madrid Club de Fútbol: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Johan Cruijff: Real Madrid Club de Fútbol: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: Real Madrid + Nederland = false",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: Ajax + Nederland = true",
+        "ok": true
+      },
+      {
+        "label": "Johan Cruijff: alle aanwezige carrièreclubs in clubPlayers en cluePlayers",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "name": "Dennis Bergkamp",
+    "id": "LEGEND-DENNIS-BERGKAMP",
+    "recordCount": 1,
+    "clubs": [
+      "Ajax",
+      "Arsenal",
+      "Inter"
+    ],
+    "internationalTeams": [
+      "Nederland"
+    ],
+    "realMadridNetherlands": false,
+    "passed": 20,
+    "failed": 3,
+    "checks": [
+      {
+        "label": "Dennis Bergkamp: één canoniek record en één juiste nameLookup-verwijzing",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: zoeken op Bergkamp",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: carrièreclub Ajax",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: playerMatchesClue(Ajax) = true",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: cluePlayers en clubPlayers bevatten Ajax",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: carrièreclub Internazionale",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: playerMatchesClue(Internazionale) = true",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: cluePlayers en clubPlayers bevatten Internazionale",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: carrièreclub Arsenal",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: playerMatchesClue(Arsenal) = true",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: cluePlayers en clubPlayers bevatten Arsenal",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: Nederland: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: Netherlands: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: Holland: sleutel nederland, nationaal team, match en index",
+        "ok": false
+      },
+      {
+        "label": "Dennis Bergkamp: Real Madrid: sleutel real madrid",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: Real Madrid: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: Real Madrid CF: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Dennis Bergkamp: Real Madrid CF: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: Real Madrid Club de Fútbol: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Dennis Bergkamp: Real Madrid Club de Fútbol: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: Real Madrid + Nederland = false",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: Internazionale + Nederland = true",
+        "ok": true
+      },
+      {
+        "label": "Dennis Bergkamp: alle aanwezige carrièreclubs in clubPlayers en cluePlayers",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "name": "Virgil van Dijk",
+    "id": "TM139208",
+    "recordCount": 1,
+    "clubs": [
+      "Celtic",
+      "FC Groningen",
+      "Liverpool",
+      "Southampton",
+      "WDS '19 Jeugd"
+    ],
+    "internationalTeams": [
+      "Nederland"
+    ],
+    "realMadridNetherlands": false,
+    "passed": 23,
+    "failed": 3,
+    "checks": [
+      {
+        "label": "Virgil van Dijk: één canoniek record en één juiste nameLookup-verwijzing",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: zoeken op van Dijk",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: carrièreclub FC Groningen",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: playerMatchesClue(FC Groningen) = true",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: cluePlayers en clubPlayers bevatten FC Groningen",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: carrièreclub Celtic",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: playerMatchesClue(Celtic) = true",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: cluePlayers en clubPlayers bevatten Celtic",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: carrièreclub Southampton",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: playerMatchesClue(Southampton) = true",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: cluePlayers en clubPlayers bevatten Southampton",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: carrièreclub Liverpool",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: playerMatchesClue(Liverpool) = true",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: cluePlayers en clubPlayers bevatten Liverpool",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: Nederland: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: Netherlands: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: Holland: sleutel nederland, nationaal team, match en index",
+        "ok": false
+      },
+      {
+        "label": "Virgil van Dijk: Real Madrid: sleutel real madrid",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: Real Madrid: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: Real Madrid CF: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Virgil van Dijk: Real Madrid CF: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: Real Madrid Club de Fútbol: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Virgil van Dijk: Real Madrid Club de Fútbol: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: Real Madrid + Nederland = false",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: Liverpool + Nederland = true",
+        "ok": true
+      },
+      {
+        "label": "Virgil van Dijk: alle aanwezige carrièreclubs in clubPlayers en cluePlayers",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "name": "Kenneth Taylor",
+    "id": "TM470394",
+    "recordCount": 1,
+    "clubs": [
+      "Ajax",
+      "Lazio"
+    ],
+    "internationalTeams": [
+      "Nederland"
+    ],
+    "realMadridNetherlands": false,
+    "passed": 17,
+    "failed": 3,
+    "checks": [
+      {
+        "label": "Kenneth Taylor: één canoniek record en één juiste nameLookup-verwijzing",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: zoeken op Kenneth Taylor",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: carrièreclub Ajax",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: playerMatchesClue(Ajax) = true",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: cluePlayers en clubPlayers bevatten Ajax",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: carrièreclub Lazio",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: playerMatchesClue(Lazio) = true",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: cluePlayers en clubPlayers bevatten Lazio",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: Nederland: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: Netherlands: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: Holland: sleutel nederland, nationaal team, match en index",
+        "ok": false
+      },
+      {
+        "label": "Kenneth Taylor: Real Madrid: sleutel real madrid",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: Real Madrid: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: Real Madrid CF: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Kenneth Taylor: Real Madrid CF: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: Real Madrid Club de Fútbol: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Kenneth Taylor: Real Madrid Club de Fútbol: match en index = false",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: Real Madrid + Nederland = false",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: Lazio + Nederland = true",
+        "ok": true
+      },
+      {
+        "label": "Kenneth Taylor: alle aanwezige carrièreclubs in clubPlayers en cluePlayers",
+        "ok": true
+      }
+    ]
+  },
+  {
+    "name": "Wesley Sneijder",
+    "id": "LEGEND-WESLEY-SNEIJDER",
+    "recordCount": 1,
+    "clubs": [
+      "Ajax",
+      "Inter",
+      "Galatasaray"
+    ],
+    "internationalTeams": [
+      "Nederland"
+    ],
+    "realMadridNetherlands": false,
+    "passed": 15,
+    "failed": 17,
+    "checks": [
+      {
+        "label": "Wesley Sneijder: één canoniek record en één juiste nameLookup-verwijzing",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: zoeken op Sneijder",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: carrièreclub Ajax",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: playerMatchesClue(Ajax) = true",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: cluePlayers en clubPlayers bevatten Ajax",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: carrièreclub Real Madrid",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: playerMatchesClue(Real Madrid) = true",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: cluePlayers en clubPlayers bevatten Real Madrid",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: carrièreclub Internazionale",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: playerMatchesClue(Internazionale) = true",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: cluePlayers en clubPlayers bevatten Internazionale",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: carrièreclub Galatasaray",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: playerMatchesClue(Galatasaray) = true",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: cluePlayers en clubPlayers bevatten Galatasaray",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: carrièreclub OGC Nice",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: playerMatchesClue(OGC Nice) = true",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: cluePlayers en clubPlayers bevatten OGC Nice",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: carrièreclub Al-Gharafa",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: playerMatchesClue(Al-Gharafa) = true",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: cluePlayers en clubPlayers bevatten Al-Gharafa",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: Nederland: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: Netherlands: sleutel nederland, nationaal team, match en index",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: Holland: sleutel nederland, nationaal team, match en index",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: Real Madrid: sleutel real madrid",
+        "ok": true
+      },
+      {
+        "label": "Wesley Sneijder: Real Madrid: match en index = true",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: Real Madrid CF: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: Real Madrid CF: match en index = true",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: Real Madrid Club de Fútbol: sleutel real madrid",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: Real Madrid Club de Fútbol: match en index = true",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: Real Madrid + Nederland = true",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: Real Madrid + Nederland = true",
+        "ok": false
+      },
+      {
+        "label": "Wesley Sneijder: alle aanwezige carrièreclubs in clubPlayers en cluePlayers",
+        "ok": true
+      }
+    ]
+  }
+]

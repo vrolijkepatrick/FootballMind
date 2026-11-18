@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "description": "Centrale spelerfeiten. Iedere koppeling gebruikt een canoniek bron-ID; namen worden hier niet als sleutel gebruikt.",
+  "facts": [
+    {
+      "playerId": "TM288230",
+      "field": "awards",
+      "value": "Champions League winnaar",
+      "season": "2024/25",
+      "club": "Paris Saint-Germain",
+      "source": "UEFA Champions League-winnaarsselectie"
+    },
+    {
+      "playerId": "TM914562",
+      "field": "awards",
+      "value": "Champions League winnaar",
+      "season": "2024/25",
+      "club": "Paris Saint-Germain",
+      "source": "UEFA Champions League-winnaarsselectie"
+    }
+  ]
+}

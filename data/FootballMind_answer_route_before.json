@@ -1,0 +1,575 @@
+{
+  "results": [
+    {
+      "scenario": {
+        "name": "Wesley Sneijder",
+        "query": "Sneijder",
+        "row": "Real Madrid",
+        "column": "Nederland"
+      },
+      "selectedPlayerId": "LEGEND-WESLEY-SNEIJDER",
+      "canonicalPlayerName": "Wesley Sneijder",
+      "normalizedSearchName": "sneijder",
+      "normalizedAnswerName": "wesley sneijder",
+      "clubs": [
+        "Ajax",
+        "Inter",
+        "Galatasaray",
+        "Real Madrid",
+        "OGC Nice",
+        "Al-Gharafa"
+      ],
+      "firstTeamClubs": null,
+      "firstTeamEvidence": "Niet afzonderlijk vastgelegd in de bron",
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "competitions": [
+        "Eredivisie",
+        "Serie A",
+        "Süper Lig",
+        "La Liga",
+        "Ligue 1"
+      ],
+      "aliases": [],
+      "normalizedClues": [
+        "real madrid",
+        "nederland"
+      ],
+      "playerMatchesClue": [
+        true,
+        true
+      ],
+      "sameCanonicalObject": true,
+      "usedIndex": {
+        "playerIndex": 89829,
+        "nameLookup": [
+          89829
+        ],
+        "cluePlayers": [
+          {
+            "key": "real madrid",
+            "containsPlayer": true
+          },
+          {
+            "key": "nederland",
+            "containsPlayer": true
+          }
+        ],
+        "countryPlayers": null
+      },
+      "versions": {
+        "database": 4,
+        "normalization": "2026-09-central-clues-v4",
+        "cache": 4,
+        "cacheKey": "game-database-v6",
+        "inputRevision": "81ddf1dfb82e16f874a3b6a5bc4a75ea7616683786b7d10fde572d73d2f8b0c2"
+      },
+      "result": "GOED",
+      "reason": null,
+      "cell": {
+        "playerId": "LEGEND-WESLEY-SNEIJDER",
+        "name": "Wesley Sneijder",
+        "image": "",
+        "owner": 1
+      },
+      "boardShowsCorrect": true,
+      "visibleResults": 1,
+      "debug": null
+    },
+    {
+      "scenario": {
+        "name": "Johan Cruijff",
+        "query": "Cruijff",
+        "row": "Ajax",
+        "column": "Nederland"
+      },
+      "selectedPlayerId": "LEGACY-CRUIJFF",
+      "canonicalPlayerName": "Johan Cruijff",
+      "normalizedSearchName": "cruijff",
+      "normalizedAnswerName": "johan cruijff",
+      "clubs": [
+        "Ajax",
+        "Barcelona",
+        "Feyenoord",
+        "Los Angeles Aztecs",
+        "Washington Diplomats",
+        "Levante"
+      ],
+      "firstTeamClubs": null,
+      "firstTeamEvidence": "Niet afzonderlijk vastgelegd in de bron",
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "competitions": [
+        "Eredivisie",
+        "La Liga",
+        "North American Soccer League"
+      ],
+      "aliases": [
+        "Johan Cruyff"
+      ],
+      "normalizedClues": [
+        "ajax",
+        "nederland"
+      ],
+      "playerMatchesClue": [
+        true,
+        true
+      ],
+      "sameCanonicalObject": true,
+      "usedIndex": {
+        "playerIndex": 43115,
+        "nameLookup": [
+          43115
+        ],
+        "cluePlayers": [
+          {
+            "key": "ajax",
+            "containsPlayer": true
+          },
+          {
+            "key": "nederland",
+            "containsPlayer": true
+          }
+        ],
+        "countryPlayers": null
+      },
+      "versions": {
+        "database": 4,
+        "normalization": "2026-09-central-clues-v4",
+        "cache": 4,
+        "cacheKey": "game-database-v6",
+        "inputRevision": "81ddf1dfb82e16f874a3b6a5bc4a75ea7616683786b7d10fde572d73d2f8b0c2"
+      },
+      "result": "GOED",
+      "reason": null,
+      "cell": {
+        "playerId": "LEGACY-CRUIJFF",
+        "name": "Johan Cruijff",
+        "image": "",
+        "owner": 1
+      },
+      "boardShowsCorrect": true,
+      "visibleResults": 1,
+      "debug": null
+    },
+    {
+      "scenario": {
+        "name": "Dennis Bergkamp",
+        "query": "Bergkamp",
+        "row": "Arsenal",
+        "column": "Nederland"
+      },
+      "selectedPlayerId": "LEGEND-DENNIS-BERGKAMP",
+      "canonicalPlayerName": "Dennis Bergkamp",
+      "normalizedSearchName": "bergkamp",
+      "normalizedAnswerName": "dennis bergkamp",
+      "clubs": [
+        "Ajax",
+        "Arsenal",
+        "Inter"
+      ],
+      "firstTeamClubs": null,
+      "firstTeamEvidence": "Niet afzonderlijk vastgelegd in de bron",
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "competitions": [
+        "Eredivisie",
+        "Premier League",
+        "Serie A"
+      ],
+      "aliases": [],
+      "normalizedClues": [
+        "arsenal",
+        "nederland"
+      ],
+      "playerMatchesClue": [
+        true,
+        true
+      ],
+      "sameCanonicalObject": true,
+      "usedIndex": {
+        "playerIndex": 20936,
+        "nameLookup": [
+          20936
+        ],
+        "cluePlayers": [
+          {
+            "key": "arsenal",
+            "containsPlayer": true
+          },
+          {
+            "key": "nederland",
+            "containsPlayer": true
+          }
+        ],
+        "countryPlayers": null
+      },
+      "versions": {
+        "database": 4,
+        "normalization": "2026-09-central-clues-v4",
+        "cache": 4,
+        "cacheKey": "game-database-v6",
+        "inputRevision": "81ddf1dfb82e16f874a3b6a5bc4a75ea7616683786b7d10fde572d73d2f8b0c2"
+      },
+      "result": "GOED",
+      "reason": null,
+      "cell": {
+        "playerId": "LEGEND-DENNIS-BERGKAMP",
+        "name": "Dennis Bergkamp",
+        "image": "",
+        "owner": 1
+      },
+      "boardShowsCorrect": true,
+      "visibleResults": 1,
+      "debug": null
+    },
+    {
+      "scenario": {
+        "name": "Virgil van Dijk",
+        "query": "van Dijk",
+        "row": "Liverpool",
+        "column": "Nederland"
+      },
+      "selectedPlayerId": "TM139208",
+      "canonicalPlayerName": "Virgil van Dijk",
+      "normalizedSearchName": "van dijk",
+      "normalizedAnswerName": "virgil van dijk",
+      "clubs": [
+        "Celtic",
+        "FC Groningen",
+        "Liverpool",
+        "Southampton",
+        "WDS '19 Jeugd"
+      ],
+      "firstTeamClubs": null,
+      "firstTeamEvidence": "Niet afzonderlijk vastgelegd in de bron",
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "competitions": [
+        "Championship",
+        "Eredivisie",
+        "Premier League",
+        "Scottish Premiership",
+        "U21 Division 1 Fall"
+      ],
+      "aliases": [],
+      "normalizedClues": [
+        "liverpool",
+        "nederland"
+      ],
+      "playerMatchesClue": [
+        true,
+        true
+      ],
+      "sameCanonicalObject": true,
+      "usedIndex": {
+        "playerIndex": 88932,
+        "nameLookup": [
+          88932
+        ],
+        "cluePlayers": [
+          {
+            "key": "liverpool",
+            "containsPlayer": true
+          },
+          {
+            "key": "nederland",
+            "containsPlayer": true
+          }
+        ],
+        "countryPlayers": null
+      },
+      "versions": {
+        "database": 4,
+        "normalization": "2026-09-central-clues-v4",
+        "cache": 4,
+        "cacheKey": "game-database-v6",
+        "inputRevision": "81ddf1dfb82e16f874a3b6a5bc4a75ea7616683786b7d10fde572d73d2f8b0c2"
+      },
+      "result": "GOED",
+      "reason": null,
+      "cell": {
+        "playerId": "TM139208",
+        "name": "Virgil van Dijk",
+        "image": "",
+        "owner": 1
+      },
+      "boardShowsCorrect": true,
+      "visibleResults": 7,
+      "debug": null
+    },
+    {
+      "scenario": {
+        "name": "Kenneth Taylor",
+        "query": "Kenneth Taylor",
+        "row": "Ajax",
+        "column": "Serie A"
+      },
+      "selectedPlayerId": "TM470394",
+      "canonicalPlayerName": "Kenneth Taylor",
+      "normalizedSearchName": "kenneth taylor",
+      "normalizedAnswerName": "kenneth taylor",
+      "clubs": [
+        "Ajax",
+        "Lazio"
+      ],
+      "firstTeamClubs": null,
+      "firstTeamEvidence": "Niet afzonderlijk vastgelegd in de bron",
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "competitions": [
+        "Eredivisie",
+        "Keuken Kampioen Divisie",
+        "Serie A"
+      ],
+      "aliases": [
+        "Kenneth Ina Dorothea Taylor"
+      ],
+      "normalizedClues": [
+        "ajax",
+        "serie a"
+      ],
+      "playerMatchesClue": [
+        true,
+        true
+      ],
+      "sameCanonicalObject": true,
+      "usedIndex": {
+        "playerIndex": 47833,
+        "nameLookup": [
+          47833
+        ],
+        "cluePlayers": [
+          {
+            "key": "ajax",
+            "containsPlayer": true
+          },
+          {
+            "key": "serie a",
+            "containsPlayer": true
+          }
+        ],
+        "countryPlayers": null
+      },
+      "versions": {
+        "database": 4,
+        "normalization": "2026-09-central-clues-v4",
+        "cache": 4,
+        "cacheKey": "game-database-v6",
+        "inputRevision": "81ddf1dfb82e16f874a3b6a5bc4a75ea7616683786b7d10fde572d73d2f8b0c2"
+      },
+      "result": "GOED",
+      "reason": null,
+      "cell": {
+        "playerId": "TM470394",
+        "name": "Kenneth Taylor",
+        "image": "",
+        "owner": 1
+      },
+      "boardShowsCorrect": true,
+      "visibleResults": 1,
+      "debug": null
+    },
+    {
+      "scenario": {
+        "name": "Kenneth Taylor",
+        "query": "Taylor",
+        "row": "Lazio",
+        "column": "Nederland"
+      },
+      "selectedPlayerId": null,
+      "canonicalPlayerName": null,
+      "normalizedSearchName": "taylor",
+      "normalizedAnswerName": "",
+      "clubs": [],
+      "firstTeamClubs": null,
+      "firstTeamEvidence": "Niet afzonderlijk vastgelegd in de bron",
+      "internationalTeams": [],
+      "competitions": [],
+      "aliases": [],
+      "normalizedClues": [
+        "lazio",
+        "nederland"
+      ],
+      "playerMatchesClue": [
+        false,
+        false
+      ],
+      "sameCanonicalObject": false,
+      "usedIndex": {
+        "playerIndex": -1,
+        "nameLookup": [],
+        "cluePlayers": [
+          {
+            "key": "lazio",
+            "containsPlayer": false
+          },
+          {
+            "key": "nederland",
+            "containsPlayer": false
+          }
+        ],
+        "countryPlayers": null
+      },
+      "versions": {
+        "database": 4,
+        "normalization": "2026-09-central-clues-v4",
+        "cache": 4,
+        "cacheKey": "game-database-v6",
+        "inputRevision": "81ddf1dfb82e16f874a3b6a5bc4a75ea7616683786b7d10fde572d73d2f8b0c2"
+      },
+      "result": "FOUT",
+      "reason": "Speler ontbreekt in de zichtbare zoekresultaten",
+      "cell": null,
+      "boardShowsCorrect": false,
+      "visibleResults": 30,
+      "debug": null
+    }
+  ],
+  "firstTaylor": {
+    "scenario": {
+      "name": "Kenneth Taylor",
+      "query": "Kenneth Taylor",
+      "row": "Ajax",
+      "column": "Serie A"
+    },
+    "selectedPlayerId": "TM470394",
+    "canonicalPlayerName": "Kenneth Taylor",
+    "normalizedSearchName": "kenneth taylor",
+    "normalizedAnswerName": "kenneth taylor",
+    "clubs": [
+      "Ajax",
+      "Lazio"
+    ],
+    "firstTeamClubs": null,
+    "firstTeamEvidence": "Niet afzonderlijk vastgelegd in de bron",
+    "internationalTeams": [
+      "Nederland"
+    ],
+    "competitions": [
+      "Eredivisie",
+      "Keuken Kampioen Divisie",
+      "Serie A"
+    ],
+    "aliases": [
+      "Kenneth Ina Dorothea Taylor"
+    ],
+    "normalizedClues": [
+      "ajax",
+      "serie a"
+    ],
+    "playerMatchesClue": [
+      true,
+      true
+    ],
+    "sameCanonicalObject": true,
+    "usedIndex": {
+      "playerIndex": 47833,
+      "nameLookup": [
+        47833
+      ],
+      "cluePlayers": [
+        {
+          "key": "ajax",
+          "containsPlayer": true
+        },
+        {
+          "key": "serie a",
+          "containsPlayer": true
+        }
+      ],
+      "countryPlayers": null
+    },
+    "versions": {
+      "database": 4,
+      "normalization": "2026-09-central-clues-v4",
+      "cache": 4,
+      "cacheKey": "game-database-v6",
+      "inputRevision": "81ddf1dfb82e16f874a3b6a5bc4a75ea7616683786b7d10fde572d73d2f8b0c2"
+    },
+    "result": "GOED",
+    "reason": null,
+    "cell": {
+      "playerId": "TM470394",
+      "name": "Kenneth Taylor",
+      "image": "",
+      "owner": 1
+    },
+    "boardShowsCorrect": true,
+    "visibleResults": 1,
+    "debug": null
+  },
+  "repeatedTaylor": {
+    "scenario": {
+      "name": "Kenneth Taylor",
+      "query": "Kenneth Taylor",
+      "row": "Lazio",
+      "column": "Nederland"
+    },
+    "selectedPlayerId": "TM470394",
+    "canonicalPlayerName": "Kenneth Taylor",
+    "normalizedSearchName": "kenneth taylor",
+    "normalizedAnswerName": "kenneth taylor",
+    "clubs": [
+      "Ajax",
+      "Lazio"
+    ],
+    "firstTeamClubs": null,
+    "firstTeamEvidence": "Niet afzonderlijk vastgelegd in de bron",
+    "internationalTeams": [
+      "Nederland"
+    ],
+    "competitions": [
+      "Eredivisie",
+      "Keuken Kampioen Divisie",
+      "Serie A"
+    ],
+    "aliases": [
+      "Kenneth Ina Dorothea Taylor"
+    ],
+    "normalizedClues": [
+      "lazio",
+      "nederland"
+    ],
+    "playerMatchesClue": [
+      true,
+      true
+    ],
+    "sameCanonicalObject": true,
+    "usedIndex": {
+      "playerIndex": 47833,
+      "nameLookup": [
+        47833
+      ],
+      "cluePlayers": [
+        {
+          "key": "lazio",
+          "containsPlayer": true
+        },
+        {
+          "key": "nederland",
+          "containsPlayer": true
+        }
+      ],
+      "countryPlayers": null
+    },
+    "versions": {
+      "database": 4,
+      "normalization": "2026-09-central-clues-v4",
+      "cache": 4,
+      "cacheKey": "game-database-v6",
+      "inputRevision": "81ddf1dfb82e16f874a3b6a5bc4a75ea7616683786b7d10fde572d73d2f8b0c2"
+    },
+    "result": "FOUT",
+    "reason": "✕ Kenneth Taylor is al gebruikt is fout voor Speler 2 · beurt voorbij",
+    "cell": null,
+    "boardShowsCorrect": false,
+    "visibleResults": 1,
+    "debug": null
+  }
+}

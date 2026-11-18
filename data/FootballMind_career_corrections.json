@@ -1,0 +1,1946 @@
+{
+  "version": "2026-09-careers-v3",
+  "source": "Gecontroleerde FootballMind-loopbaanaanvullingen",
+  "players": [
+    {
+      "name": "Johan Cruijff",
+      "aliases": [
+        "Johan Cruyff"
+      ],
+      "clubs": [
+        "Ajax",
+        "Barcelona",
+        "Feyenoord",
+        "Levante",
+        "Los Angeles Aztecs",
+        "Washington Diplomats"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Marco van Basten",
+      "clubs": [
+        "Ajax",
+        "AC Milan"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "awards": [
+        "Ballon d'Or",
+        "Europees Voetballer van het Jaar"
+      ],
+      "aliases": [],
+      "competitions": []
+    },
+    {
+      "name": "Frank Rijkaard",
+      "clubs": [
+        "Ajax",
+        "Real Zaragoza",
+        "AC Milan"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Johan Neeskens",
+      "clubs": [
+        "Ajax",
+        "Barcelona",
+        "New York Cosmos"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Ruud Krol",
+      "clubs": [
+        "Ajax",
+        "Vancouver Whitecaps",
+        "Napoli",
+        "AS Cannes"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Johnny Rep",
+      "clubs": [
+        "Ajax",
+        "Valencia",
+        "Bastia",
+        "Saint-Étienne",
+        "PEC Zwolle",
+        "Feyenoord"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Arie Haan",
+      "clubs": [
+        "Ajax",
+        "Anderlecht",
+        "Standard Liège",
+        "PSV"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Wim Suurbier",
+      "clubs": [
+        "Ajax",
+        "Schalke 04",
+        "Metz",
+        "Los Angeles Aztecs"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Piet Keizer",
+      "clubs": [
+        "Ajax"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Sjaak Swart",
+      "clubs": [
+        "Ajax"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Wim Kieft",
+      "clubs": [
+        "Ajax",
+        "Pisa",
+        "Torino",
+        "PSV",
+        "Bordeaux"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Gerald Vanenburg",
+      "clubs": [
+        "Ajax",
+        "PSV",
+        "Júbilo Iwata",
+        "FC Utrecht",
+        "AS Cannes"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Jan Wouters",
+      "clubs": [
+        "FC Utrecht",
+        "Ajax",
+        "Bayern München",
+        "PSV"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "John van 't Schip",
+      "clubs": [
+        "Ajax",
+        "Genoa"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Aron Winter",
+      "clubs": [
+        "Ajax",
+        "Lazio",
+        "Inter"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Danny Blind",
+      "clubs": [
+        "Sparta Rotterdam",
+        "Ajax"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Ruud Gullit",
+      "clubs": [
+        "HFC Haarlem",
+        "Feyenoord",
+        "PSV",
+        "AC Milan",
+        "Sampdoria",
+        "Chelsea"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Ronald Koeman",
+      "clubs": [
+        "FC Groningen",
+        "Ajax",
+        "PSV",
+        "Barcelona",
+        "Feyenoord"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Hans van Breukelen",
+      "clubs": [
+        "FC Utrecht",
+        "Nottingham Forest",
+        "PSV"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Berry van Aerle",
+      "clubs": [
+        "PSV",
+        "Royal Antwerp"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Willy van de Kerkhof",
+      "clubs": [
+        "FC Twente",
+        "PSV"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "René van de Kerkhof",
+      "aliases": [
+        "Rene van de Kerkhof"
+      ],
+      "clubs": [
+        "FC Twente",
+        "PSV",
+        "Apollon Smyrnis",
+        "Seiko"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Coen Moulijn",
+      "clubs": [
+        "Xerxes",
+        "Feyenoord"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Willem van Hanegem",
+      "clubs": [
+        "Xerxes",
+        "Feyenoord",
+        "AZ",
+        "Chicago Sting",
+        "FC Utrecht"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Lothar Matthäus",
+      "aliases": [
+        "Lothar Matthaus"
+      ],
+      "clubs": [
+        "Borussia Mönchengladbach",
+        "Bayern München",
+        "Inter",
+        "MetroStars"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Andreas Brehme",
+      "clubs": [
+        "1. FC Kaiserslautern",
+        "Bayern München",
+        "Inter",
+        "Real Zaragoza"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Jürgen Klinsmann",
+      "aliases": [
+        "Jurgen Klinsmann"
+      ],
+      "clubs": [
+        "Stuttgarter Kickers",
+        "VfB Stuttgart",
+        "Inter",
+        "Monaco",
+        "Tottenham Hotspur",
+        "Bayern München",
+        "Sampdoria"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Karl-Heinz Rummenigge",
+      "clubs": [
+        "Bayern München",
+        "Inter",
+        "Servette"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Matthias Sammer",
+      "clubs": [
+        "Dynamo Dresden",
+        "VfB Stuttgart",
+        "Inter",
+        "Borussia Dortmund"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Franz Beckenbauer",
+      "clubs": [
+        "Bayern München",
+        "New York Cosmos",
+        "Hamburger SV"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Gerd Müller",
+      "aliases": [
+        "Gerd Muller"
+      ],
+      "clubs": [
+        "Bayern München",
+        "Fort Lauderdale Strikers"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Sepp Maier",
+      "clubs": [
+        "Bayern München"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Paul Breitner",
+      "clubs": [
+        "Bayern München",
+        "Real Madrid",
+        "Eintracht Braunschweig"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Oliver Kahn",
+      "clubs": [
+        "Karlsruher SC",
+        "Bayern München"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Stefan Effenberg",
+      "clubs": [
+        "Borussia Mönchengladbach",
+        "Bayern München",
+        "Fiorentina",
+        "Wolfsburg"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Rudi Völler",
+      "aliases": [
+        "Rudi Voller"
+      ],
+      "clubs": [
+        "Werder Bremen",
+        "Roma",
+        "Marseille",
+        "Bayer Leverkusen"
+      ],
+      "internationalTeams": [
+        "Duitsland"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Giuseppe Bergomi",
+      "clubs": [
+        "Inter"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Giacinto Facchetti",
+      "clubs": [
+        "Inter"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Sandro Mazzola",
+      "clubs": [
+        "Inter"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Walter Zenga",
+      "clubs": [
+        "Inter",
+        "Sampdoria",
+        "Padova",
+        "New England Revolution"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Nicola Berti",
+      "clubs": [
+        "Parma",
+        "Fiorentina",
+        "Inter",
+        "Tottenham Hotspur",
+        "Alavés"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Javier Zanetti",
+      "clubs": [
+        "Talleres",
+        "Banfield",
+        "Inter"
+      ],
+      "internationalTeams": [
+        "Argentinië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Diego Milito",
+      "clubs": [
+        "Racing Club",
+        "Real Zaragoza",
+        "Genoa",
+        "Inter"
+      ],
+      "internationalTeams": [
+        "Argentinië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Franco Baresi",
+      "clubs": [
+        "AC Milan"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Paolo Maldini",
+      "clubs": [
+        "AC Milan"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Alessandro Costacurta",
+      "clubs": [
+        "AC Milan",
+        "Monza"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Roberto Donadoni",
+      "clubs": [
+        "Atalanta",
+        "AC Milan",
+        "MetroStars",
+        "Al-Ittihad"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Andriy Shevchenko",
+      "clubs": [
+        "Dynamo Kyiv",
+        "AC Milan",
+        "Chelsea"
+      ],
+      "internationalTeams": [
+        "Oekraïne"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Kaká",
+      "aliases": [
+        "Kaka"
+      ],
+      "clubs": [
+        "São Paulo",
+        "AC Milan",
+        "Real Madrid",
+        "Orlando City"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "George Weah",
+      "clubs": [
+        "Monaco",
+        "Paris Saint-Germain",
+        "AC Milan",
+        "Chelsea",
+        "Manchester City",
+        "Marseille"
+      ],
+      "internationalTeams": [
+        "Liberia"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Michel Platini",
+      "clubs": [
+        "Nancy",
+        "Saint-Étienne",
+        "Juventus"
+      ],
+      "internationalTeams": [
+        "Frankrijk"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Dino Zoff",
+      "clubs": [
+        "Udinese",
+        "Mantova",
+        "Napoli",
+        "Juventus"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Gaetano Scirea",
+      "clubs": [
+        "Atalanta",
+        "Juventus"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Roberto Baggio",
+      "clubs": [
+        "Vicenza",
+        "Fiorentina",
+        "Juventus",
+        "AC Milan",
+        "Bologna",
+        "Inter",
+        "Brescia"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Alessandro Del Piero",
+      "clubs": [
+        "Padova",
+        "Juventus",
+        "Sydney FC",
+        "Delhi Dynamos"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Pavel Nedvěd",
+      "aliases": [
+        "Pavel Nedved"
+      ],
+      "clubs": [
+        "Dukla Prague",
+        "Sparta Prague",
+        "Lazio",
+        "Juventus"
+      ],
+      "internationalTeams": [
+        "Tsjechië"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Alfredo Di Stéfano",
+      "aliases": [
+        "Alfredo Di Stefano"
+      ],
+      "clubs": [
+        "River Plate",
+        "Huracán",
+        "Millonarios",
+        "Real Madrid",
+        "Espanyol"
+      ],
+      "internationalTeams": [
+        "Argentinië",
+        "Spanje"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Ferenc Puskás",
+      "aliases": [
+        "Ferenc Puskas"
+      ],
+      "clubs": [
+        "Budapest Honvéd",
+        "Real Madrid"
+      ],
+      "internationalTeams": [
+        "Hongarije",
+        "Spanje"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Paco Gento",
+      "clubs": [
+        "Racing Santander",
+        "Real Madrid"
+      ],
+      "internationalTeams": [
+        "Spanje"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Emilio Butragueño",
+      "aliases": [
+        "Emilio Butragueno"
+      ],
+      "clubs": [
+        "Real Madrid",
+        "Celaya"
+      ],
+      "internationalTeams": [
+        "Spanje"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Hugo Sánchez",
+      "aliases": [
+        "Hugo Sanchez"
+      ],
+      "clubs": [
+        "UNAM",
+        "Atlético Madrid",
+        "Real Madrid",
+        "América",
+        "Rayo Vallecano",
+        "Atlante",
+        "Dallas Burn",
+        "Celaya"
+      ],
+      "internationalTeams": [
+        "Mexico"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Raúl",
+      "aliases": [
+        "Raul"
+      ],
+      "clubs": [
+        "Real Madrid",
+        "Schalke 04",
+        "Al Sadd",
+        "New York Cosmos"
+      ],
+      "internationalTeams": [
+        "Spanje"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Iker Casillas",
+      "clubs": [
+        "Real Madrid",
+        "Porto"
+      ],
+      "internationalTeams": [
+        "Spanje"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Roberto Carlos",
+      "clubs": [
+        "União São João",
+        "Palmeiras",
+        "Inter",
+        "Real Madrid",
+        "Fenerbahçe",
+        "Corinthians",
+        "Anzhi Makhachkala"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Carles Puyol",
+      "clubs": [
+        "Barcelona"
+      ],
+      "internationalTeams": [
+        "Spanje"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Xavi",
+      "clubs": [
+        "Barcelona",
+        "Al Sadd"
+      ],
+      "internationalTeams": [
+        "Spanje"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Andrés Iniesta",
+      "aliases": [
+        "Andres Iniesta"
+      ],
+      "clubs": [
+        "Barcelona",
+        "Vissel Kobe",
+        "Emirates Club"
+      ],
+      "internationalTeams": [
+        "Spanje"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Hristo Stoichkov",
+      "clubs": [
+        "CSKA Sofia",
+        "Barcelona",
+        "Parma",
+        "Al-Nassr",
+        "Kashiwa Reysol",
+        "Chicago Fire",
+        "D.C. United"
+      ],
+      "internationalTeams": [
+        "Bulgarije"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Michael Laudrup",
+      "clubs": [
+        "Brøndby",
+        "Lazio",
+        "Juventus",
+        "Barcelona",
+        "Real Madrid",
+        "Vissel Kobe",
+        "Ajax"
+      ],
+      "internationalTeams": [
+        "Denemarken"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Pelé",
+      "aliases": [
+        "Pele"
+      ],
+      "clubs": [
+        "Santos",
+        "New York Cosmos"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Zico",
+      "clubs": [
+        "Flamengo",
+        "Udinese",
+        "Kashima Antlers"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Romário",
+      "aliases": [
+        "Romario"
+      ],
+      "clubs": [
+        "Vasco da Gama",
+        "PSV",
+        "Barcelona",
+        "Flamengo",
+        "Valencia",
+        "Fluminense"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Ronaldo",
+      "aliases": [
+        "Ronaldo Nazário",
+        "Ronaldo Nazario"
+      ],
+      "clubs": [
+        "Cruzeiro",
+        "PSV",
+        "Barcelona",
+        "Inter",
+        "Real Madrid",
+        "AC Milan",
+        "Corinthians"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Rivaldo",
+      "clubs": [
+        "Santa Cruz",
+        "Mogi Mirim",
+        "Corinthians",
+        "Palmeiras",
+        "Deportivo La Coruña",
+        "Barcelona",
+        "AC Milan",
+        "Cruzeiro",
+        "Olympiacos",
+        "AEK Athens"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Ronaldinho",
+      "clubs": [
+        "Grêmio",
+        "Paris Saint-Germain",
+        "Barcelona",
+        "AC Milan",
+        "Flamengo",
+        "Atlético Mineiro",
+        "Querétaro",
+        "Fluminense"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Diego Maradona",
+      "clubs": [
+        "Argentinos Juniors",
+        "Boca Juniors",
+        "Barcelona",
+        "Napoli",
+        "Sevilla",
+        "Newell's Old Boys"
+      ],
+      "internationalTeams": [
+        "Argentinië"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Bobby Charlton",
+      "clubs": [
+        "Manchester United",
+        "Preston North End"
+      ],
+      "internationalTeams": [
+        "Engeland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "George Best",
+      "clubs": [
+        "Manchester United",
+        "Los Angeles Aztecs",
+        "Fort Lauderdale Strikers",
+        "Hibernian"
+      ],
+      "internationalTeams": [
+        "Noord-Ierland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Denis Law",
+      "clubs": [
+        "Huddersfield Town",
+        "Manchester City",
+        "Torino",
+        "Manchester United"
+      ],
+      "internationalTeams": [
+        "Schotland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Bryan Robson",
+      "clubs": [
+        "West Bromwich Albion",
+        "Manchester United",
+        "Middlesbrough"
+      ],
+      "internationalTeams": [
+        "Engeland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Eric Cantona",
+      "clubs": [
+        "Auxerre",
+        "Marseille",
+        "Montpellier",
+        "Leeds United",
+        "Manchester United"
+      ],
+      "internationalTeams": [
+        "Frankrijk"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Peter Schmeichel",
+      "clubs": [
+        "Brøndby",
+        "Manchester United",
+        "Sporting CP",
+        "Aston Villa",
+        "Manchester City"
+      ],
+      "internationalTeams": [
+        "Denemarken"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Ryan Giggs",
+      "clubs": [
+        "Manchester United"
+      ],
+      "internationalTeams": [
+        "Wales"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Paul Scholes",
+      "clubs": [
+        "Manchester United"
+      ],
+      "internationalTeams": [
+        "Engeland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Roy Keane",
+      "clubs": [
+        "Cobh Ramblers",
+        "Nottingham Forest",
+        "Manchester United",
+        "Celtic"
+      ],
+      "internationalTeams": [
+        "Ierland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "clubs": [
+        "Sporting CP",
+        "Manchester United",
+        "Real Madrid",
+        "Juventus",
+        "Al Nassr"
+      ],
+      "internationalTeams": [
+        "Portugal"
+      ],
+      "image": "https://images.fotmob.com/image_resources/playerimages/30893.png",
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Kenny Dalglish",
+      "clubs": [
+        "Celtic",
+        "Liverpool"
+      ],
+      "internationalTeams": [
+        "Schotland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Ian Rush",
+      "clubs": [
+        "Chester City",
+        "Liverpool",
+        "Juventus",
+        "Leeds United",
+        "Newcastle United"
+      ],
+      "internationalTeams": [
+        "Wales"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Graeme Souness",
+      "clubs": [
+        "Tottenham Hotspur",
+        "Middlesbrough",
+        "Liverpool",
+        "Sampdoria",
+        "Rangers"
+      ],
+      "internationalTeams": [
+        "Schotland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Fernando Ricksen",
+      "clubs": [
+        "Fortuna Sittard",
+        "AZ",
+        "Rangers",
+        "Zenit Saint Petersburg"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Denzel Dumfries",
+      "clubs": [
+        "Inter",
+        "PSV",
+        "SC Heerenveen",
+        "Sparta Rotterdam"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "John Barnes",
+      "clubs": [
+        "Watford",
+        "Liverpool",
+        "Newcastle United",
+        "Charlton Athletic"
+      ],
+      "internationalTeams": [
+        "Engeland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Steven Gerrard",
+      "clubs": [
+        "Liverpool",
+        "LA Galaxy"
+      ],
+      "internationalTeams": [
+        "Engeland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Thierry Henry",
+      "clubs": [
+        "Monaco",
+        "Juventus",
+        "Arsenal",
+        "Barcelona",
+        "New York Red Bulls"
+      ],
+      "internationalTeams": [
+        "Frankrijk"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Dennis Bergkamp",
+      "clubs": [
+        "Ajax",
+        "Inter",
+        "Arsenal"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Tony Adams",
+      "clubs": [
+        "Arsenal"
+      ],
+      "internationalTeams": [
+        "Engeland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Patrick Vieira",
+      "clubs": [
+        "Cannes",
+        "AC Milan",
+        "Arsenal",
+        "Juventus",
+        "Inter",
+        "Manchester City"
+      ],
+      "internationalTeams": [
+        "Frankrijk"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Frank Lampard",
+      "clubs": [
+        "West Ham United",
+        "Swansea City",
+        "Chelsea",
+        "Manchester City",
+        "New York City FC"
+      ],
+      "internationalTeams": [
+        "Engeland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "John Terry",
+      "clubs": [
+        "Chelsea",
+        "Aston Villa"
+      ],
+      "internationalTeams": [
+        "Engeland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Didier Drogba",
+      "clubs": [
+        "Le Mans",
+        "Guingamp",
+        "Marseille",
+        "Chelsea",
+        "Shanghai Shenhua",
+        "Galatasaray",
+        "Montreal Impact"
+      ],
+      "internationalTeams": [
+        "Ivoorkust"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Ricardo Carvalho",
+      "clubs": [
+        "Porto",
+        "Chelsea",
+        "Real Madrid",
+        "Monaco",
+        "Shanghai SIPG"
+      ],
+      "internationalTeams": [
+        "Portugal"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Colin Bell",
+      "clubs": [
+        "Bury",
+        "Manchester City"
+      ],
+      "internationalTeams": [
+        "Engeland"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Sergio Agüero",
+      "aliases": [
+        "Sergio Aguero"
+      ],
+      "clubs": [
+        "Independiente",
+        "Atlético Madrid",
+        "Manchester City",
+        "Barcelona"
+      ],
+      "internationalTeams": [
+        "Argentinië"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Vincent Kompany",
+      "clubs": [
+        "Anderlecht",
+        "Hamburger SV",
+        "Manchester City"
+      ],
+      "internationalTeams": [
+        "België"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "David Silva",
+      "clubs": [
+        "Valencia",
+        "Eibar",
+        "Celta Vigo",
+        "Manchester City",
+        "Real Sociedad"
+      ],
+      "internationalTeams": [
+        "Spanje"
+      ],
+      "aliases": [],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Eusébio",
+      "aliases": [
+        "Eusebio"
+      ],
+      "clubs": [
+        "Benfica",
+        "Boston Minutemen",
+        "Monterrey",
+        "Toronto Metros-Croatia",
+        "Beira-Mar"
+      ],
+      "internationalTeams": [
+        "Portugal"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Luís Figo",
+      "aliases": [
+        "Luis Figo"
+      ],
+      "clubs": [
+        "Sporting CP",
+        "Barcelona",
+        "Real Madrid",
+        "Inter"
+      ],
+      "internationalTeams": [
+        "Portugal"
+      ],
+      "awards": [],
+      "competitions": []
+    },
+    {
+      "name": "Marc Overmars",
+      "aliases": [
+        "Overmars"
+      ],
+      "clubs": [
+        "Go Ahead Eagles",
+        "Willem II",
+        "Ajax",
+        "Arsenal",
+        "Barcelona"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ]
+    },
+    {
+      "name": "Renato Sanches",
+      "aliases": [
+        "Renato Sanchez"
+      ],
+      "clubs": [
+        "Benfica",
+        "Bayern München",
+        "Swansea City",
+        "Lille OSC",
+        "Paris Saint-Germain",
+        "AS Roma",
+        "Panathinaikos"
+      ],
+      "internationalTeams": [
+        "Portugal"
+      ]
+    },
+    {
+      "name": "Marouane Fellaini",
+      "aliases": [
+        "Fellaini",
+        "Marouane Fallaini",
+        "Fallaini"
+      ],
+      "clubs": [
+        "Standard Liège",
+        "Everton",
+        "Manchester United",
+        "Shandong Luneng"
+      ],
+      "internationalTeams": [
+        "België"
+      ]
+    },
+    {
+      "name": "Ruud Geels",
+      "clubs": [
+        "Telstar",
+        "Feyenoord",
+        "Go Ahead Eagles",
+        "Ajax",
+        "Anderlecht",
+        "Sparta Rotterdam",
+        "PSV",
+        "NAC Breda"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ]
+    },
+    {
+      "name": "Mateja Kežman",
+      "aliases": [
+        "Mateja Kezman"
+      ],
+      "clubs": [
+        "Partizan",
+        "PSV",
+        "Chelsea",
+        "Atlético Madrid",
+        "Fenerbahçe",
+        "Paris Saint-Germain",
+        "Zenit Saint Petersburg"
+      ],
+      "internationalTeams": [
+        "Servië"
+      ]
+    },
+    {
+      "name": "Luca Toni",
+      "clubs": [
+        "Modena",
+        "Empoli",
+        "Treviso",
+        "Vicenza",
+        "Brescia",
+        "Palermo",
+        "Fiorentina",
+        "Bayern München",
+        "AS Roma",
+        "Genoa",
+        "Juventus",
+        "Hellas Verona"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ]
+    },
+    {
+      "name": "Grafite",
+      "clubs": [
+        "Santa Cruz",
+        "Grêmio",
+        "Goiás",
+        "São Paulo",
+        "Le Mans",
+        "Wolfsburg",
+        "Al-Ahli",
+        "Al Sadd"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ]
+    },
+    {
+      "name": "Sonny Anderson",
+      "clubs": [
+        "Vasco da Gama",
+        "Guarani",
+        "Servette",
+        "Marseille",
+        "Monaco",
+        "Barcelona",
+        "Olympique Lyon",
+        "Villarreal",
+        "Al-Rayyan",
+        "Al-Gharafa"
+      ],
+      "internationalTeams": [
+        "Brazilië"
+      ]
+    },
+    {
+      "id": "TM470394",
+      "name": "Kenneth Taylor",
+      "aliases": [
+        "Kenneth Ina Dorothea Taylor"
+      ],
+      "clubs": [
+        "Ajax",
+        "Lazio"
+      ],
+      "internationalTeams": [
+        "Nederland"
+      ],
+      "source": "https://www.sslazio.it/it/news/comunicati/kenneth-taylor-in-biancoceleste-a-titolo-definitivo"
+    },
+    {
+      "id": "FM-HIST-moreno-torricelli",
+      "name": "Moreno Torricelli",
+      "aliases": [],
+      "clubs": [
+        "Caratese",
+        "Juventus",
+        "Fiorentina",
+        "Espanyol",
+        "Arezzo"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "awards": [
+        "Champions League winnaar"
+      ],
+      "competitions": [],
+      "legend": true,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Moreno_Torricelli",
+        "https://de.uefa.com/uefachampionsleague/match/52534--ajax-vs-juventus/lineups/",
+        "https://www.uefa.com/MultimediaFiles/Download/ITT/uefaorg/Publications/01/52/55/73/1525573_DOWNLOAD.pdf"
+      ],
+      "cupWins": [
+        {
+          "competitionId": "champions_league",
+          "season": "1995/96",
+          "club": "Juventus",
+          "membership": "winning_squad",
+          "source": "https://de.uefa.com/uefachampionsleague/match/52534--ajax-vs-juventus/lineups/"
+        },
+        {
+          "competitionId": "uefa_cup",
+          "season": "1992/93",
+          "club": "Juventus",
+          "membership": "winning_squad",
+          "source": "https://www.uefa.com/MultimediaFiles/Download/ITT/uefaorg/Publications/01/52/55/73/1525573_DOWNLOAD.pdf"
+        }
+      ]
+    },
+    {
+      "id": "FM-HIST-fabrizio-ravanelli",
+      "name": "Fabrizio Ravanelli",
+      "aliases": [],
+      "clubs": [
+        "Perugia",
+        "Avellino",
+        "Casertana",
+        "Reggiana",
+        "Juventus",
+        "Middlesbrough",
+        "Olympique Marseille",
+        "Lazio",
+        "Derby County",
+        "Dundee"
+      ],
+      "internationalTeams": [
+        "Italië"
+      ],
+      "awards": [
+        "Champions League winnaar"
+      ],
+      "competitions": [],
+      "legend": true,
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fabrizio_Ravanelli",
+        "https://de.uefa.com/uefachampionsleague/match/52534--ajax-vs-juventus/lineups/",
+        "https://www.uefa.com/MultimediaFiles/Download/ITT/uefaorg/Publications/01/52/55/73/1525573_DOWNLOAD.pdf"
+      ],
+      "cupWins": [
+        {
+          "competitionId": "champions_league",
+          "season": "1995/96",
+          "club": "Juventus",
+          "membership": "winning_squad",
+          "source": "https://de.uefa.com/uefachampionsleague/match/52534--ajax-vs-juventus/lineups/"
+        },
+        {
+          "competitionId": "uefa_cup",
+          "season": "1992/93",
+          "club": "Juventus",
+          "membership": "winning_squad",
+          "source": "https://www.uefa.com/MultimediaFiles/Download/ITT/uefaorg/Publications/01/52/55/73/1525573_DOWNLOAD.pdf"
+        }
+      ]
+    },
+    {
+      "id": "FM-HIST-soren-lerby",
+      "name": "Søren Lerby",
+      "aliases": [
+        "Soren Lerby",
+        "Sören Lerby"
+      ],
+      "clubs": [
+        "Fremad Amager",
+        "Ajax",
+        "Bayern München",
+        "AS Monaco",
+        "PSV"
+      ],
+      "firstTeamClubs": [
+        "Fremad Amager",
+        "Ajax",
+        "Bayern München",
+        "AS Monaco",
+        "PSV"
+      ],
+      "internationalTeams": [
+        "Denemarken"
+      ],
+      "awards": [
+        "Champions League winnaar"
+      ],
+      "competitions": [
+        "Champions League"
+      ],
+      "legend": true,
+      "photoPage": "Søren Lerby",
+      "sources": [
+        "https://en.wikipedia.org/wiki/S%C3%B8ren_Lerby",
+        "https://www.uefa.com/uefachampionsleague/news/0252-0cda61cd72d9-e1f121defd12-1000/"
+      ],
+      "cupWins": [
+        {
+          "competitionId": "european_cup",
+          "season": "1987/88",
+          "club": "PSV",
+          "membership": "winning_squad",
+          "source": "https://www.uefa.com/uefachampionsleague/news/0252-0cda61cd72d9-e1f121defd12-1000/"
+        }
+      ]
+    }
+  ],
+  "identityOverrides": {
+    "TM451858": {
+      "name": "Rui Pedro Silva Costa",
+      "aliases": [
+        "Rui Costa"
+      ],
+      "clubs": [
+        "AD Alcorcón",
+        "Dep. La Coruña",
+        "Famalicão",
+        "Famalicão S15",
+        "Famalicão S17",
+        "Famalicão Yo",
+        "Farense",
+        "Portimonense",
+        "SC Farense",
+        "Santa Clara",
+        "Tobol Kostanay",
+        "Varzim"
+      ],
+      "photoPage": "Rui Costa (footballer, born 1996)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rui_Costa_(footballer,_born_1996)"
+      ]
+    },
+    "TM3624": {
+      "photoPage": "Rui Costa"
+    }
+  }
+}
